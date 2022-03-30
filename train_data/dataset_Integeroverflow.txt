@@ -1,0 +1,7078 @@
+contract VAR1 {
+uint8 VAR2 = 0;
+function FUN1(uint8 value) returns (uint){
+VAR2 += value;
+assert(VAR2 >= value);
+return VAR2;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint8 VAR2 = 0;
+function FUN1(uint8 value) returns (uint){
+VAR2 += value;
+return VAR2;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+function FUN1() returns (uint256 VAR2) {
+uint256 VAR3 = 2**256 - 1;
+return VAR3 + 1;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+function FUN1() returns (uint256 VAR2) {
+uint256 VAR3 = 0;
+return VAR3 - 1;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+function FUN1() returns (uint256 VAR2) {
+uint256 VAR3 = 2**255 - 1;
+return VAR3 * 2;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+function FUN1(uint256 VAR2) public returns (bool) {
+require(VAR2 > VAR3.VAR4);
+return true;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint public VAR2;
+function FUN1(uint256 VAR3, uint256 VAR4) external returns (uint) {
+VAR2 = VAR2 + VAR3;
+return VAR2;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint public VAR2;
+enum VAR3 {VAR4, VAR5}
+function FUN1() public constant returns (VAR3) {
+if (VAR6.VAR7 < VAR2)
+return VAR3.VAR4;
+else
+return VAR3.VAR5;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2 = 0;
+function FUN1() private view returns(bool) {
+uint256 VAR3 = uint256(FUN2(VAR4.FUN3((VAR5.VAR6) / VAR7)));
+if(VAR3 < VAR2)
+return true;
+else
+return false;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint64 public VAR2 = 0;
+function FUN1(uint256 VAR3) private {
+if (VAR4.VAR5 <= VAR2) {
+require(VAR3 == 0.64 VAR6);
+}
+else {
+require(VAR3 == 0.99 VAR6);
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+struct VAR2{
+uint256 VAR3;
+}
+Proposal public VAR4;
+function FUN1(uint256 VAR5) external {
+VAR4.VAR3 = VAR6.VAR3;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+struct VAR2{
+uint256 VAR3;
+uint256 VAR4;
+}
+Proposal public VAR5;
+bool public VAR6 = false;
+function FUN1(uint256 VAR4) external {
+VAR5.VAR3 = VAR7.VAR3;
+VAR5.VAR4 = VAR4;
+VAR6 = true;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+struct VAR2{
+uint256 VAR3;
+}
+Proposal public VAR4;
+uint256 constant VAR5 = 7 VAR6;
+function FUN1(bool VAR7) external {
+require((VAR8.VAR3 - VAR4.VAR3) <= VAR5);
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+function FUN1() public view returns (uint256) {
+if (VAR3.VAR4 < VAR2) {
+return VAR2;
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+uint256 public VAR3;
+function FUN1(uint256 VAR4) public view returns (uint256) {
+uint256 VAR5 = VAR4 + 100;
+if (VAR6.VAR7 >= VAR3) {
+return VAR5 * VAR2;
+}
+}
+}
+1
+---------------------------------
+contract VAR1 {
+struct VAR2 {
+uint256 VAR3;
+}
+mapping(address => VAR2) public VAR4;
+function FUN1(address VAR5) external {
+require((VAR6.VAR7 >= VAR4[VAR5].VAR3));
+}
+}
+0
+---------------------------------
+contract VAR1 {
+enum VAR2 {VAR3}
+struct VAR4 {
+uint256 VAR5;
+bool VAR6;     
+States VAR7;
+}
+mapping(address => VAR4) public VAR8;
+function FUN1(address VAR9) external {
+require(VAR10.VAR11 >= VAR8[VAR9].VAR5);
+VAR8[VAR9].VAR7 = VAR2.VAR3;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping(address => VAR2[2]) public VAR3;
+struct VAR2 {
+uint256 VAR4;
+uint256 VAR5;
+}
+uint VAR6 = 100;
+uint VAR7 = 100;
+function FUN1(address sender) private {
+if (VAR3[sender][0].VAR4 < VAR8.VAR9) {
+VAR7 = VAR7 + (VAR3[sender][0].VAR5);
+}
+else {
+VAR6 = VAR6 + (VAR3[sender][1].VAR5);
+}
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint VAR2;
+function FUN1() public returns (uint VAR3) {
+while (VAR2 > VAR4.VAR5) {
+msg.sender.call.value(VAR3);
+}
+return VAR3;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+function FUN1() public view returns (bool) {
+return VAR3.VAR4 > VAR2;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+function FUN1(uint256 VAR3) private returns(bool) {
+if (VAR2 < VAR3) {
+uint256 VAR4 = uint256(FUN2(VAR5.FUN3((VAR6.VAR7))));
+return VAR4 > 0;
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint public VAR2 = 500;
+function FUN1(uint VAR3, uint VAR4) public returns (uint) {
+require(VAR5.VAR6 < VAR4);
+VAR2 = VAR2 + VAR3;
+return VAR2;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint public VAR2;
+uint public VAR3;
+function FUN1() payable returns (bool){
+require(VAR4.VAR5 < VAR3 && VAR2 > 0);
+return true;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+function FUN1() public view returns (bool) {
+return VAR3.VAR4 > VAR2;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping(address => uint256) public VAR2;
+function FUN1(uint256 VAR3) public view returns(uint256){
+uint256 VAR4 = VAR5.VAR6 - VAR3;
+if(VAR4 > VAR2[msg.sender]){
+VAR4 = VAR2[msg.sender];
+}
+return VAR4;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+struct VAR2 {
+uint256 VAR3;
+}
+mapping(address => VAR2) public VAR4;
+function FUN1(address VAR5) public view returns (uint256) {
+Vesting storage VAR6 = VAR4[VAR5];
+if (VAR7.VAR8 < VAR6.VAR3) {
+return VAR7.VAR8;
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => uint256) public VAR2;
+uint256 VAR3 = 0;
+uint256 VAR4 = 0;
+function FUN1() public returns (bool) {
+uint256 VAR5 = VAR6.VAR7 / (60*60*24*30*3);
+if (VAR5 >= VAR4) {
+VAR3 = VAR2[msg.sender];
+}
+return true;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+function FUN1() public returns (bool) {
+require(VAR3.VAR4 >= VAR2);
+return true;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+function FUN1 (address VAR2) external constant returns (uint VAR3);
+}
+contract VAR4 {
+uint256 public VAR5;
+function FUN2 (address VAR6) external returns (uint256) {
+VAR5 = VAR7.VAR8;
+return VAR5;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+function FUN1 (uint256 VAR3) public returns (uint) {
+VAR2 = VAR2 - VAR3;
+VAR2 = VAR2 + VAR4.VAR5;
+return VAR2;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping(address => uint256) public VAR2;
+function FUN1() public returns (uint256) {
+uint64 VAR3 = FUN2(VAR4.VAR3);
+require(VAR3 >= 1546300801);
+return 0;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+address public VAR2;
+mapping(address => uint256) public VAR3;
+modifier onlyOwner() {
+require(msg.sender == VAR2);
+VAR4;
+}
+function FUN1() public onlyOwner returns (uint256) {
+uint64 VAR5 = FUN2(VAR6.VAR5);
+require(VAR5 >= 1546300801);
+return VAR3[0x3d220cfDdc45900C78FF47D3D2f4302A2e994370];
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 constant public VAR2 = 1533686401;
+function FUN1() public payable returns (bool VAR3) {
+assert(VAR4.VAR5 >= VAR2);
+return true;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint public VAR2 = 10;
+function FUN1(uint256 VAR3) public returns (uint) {
+if(VAR2 > 1) {
+require(VAR2 == 1);
+} else {
+VAR2 = VAR4.VAR5;
+}
+return VAR2;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+function FUN1 () external view returns (uint256) {
+return VAR2.VAR3;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2 = 10;
+function FUN1() public view returns (uint256) {
+uint256 VAR3 = VAR4.VAR5 - VAR2;
+return VAR3;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint public VAR2;
+mapping (address => uint) public VAR3;
+function FUN1(address VAR4) public view returns (uint) {
+uint VAR5 = VAR3[VAR4] + 17777777;
+if (100 < VAR2) {
+return VAR5 * VAR6.VAR7;
+}
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+uint256 public VAR3;
+uint256 public VAR4;
+function FUN1() external returns (uint256) {
+VAR2 = VAR5.VAR6;
+VAR3 = VAR2 + VAR4;
+return VAR3;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint VAR2 = 0;
+function FUN1(uint256 VAR3) public returns (bool) {
+require(VAR3 >= VAR4.VAR5);
+VAR2 = VAR3;
+return true;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint public VAR2;
+enum VAR3 { VAR4, VAR5}
+function FUN1() public constant returns (VAR3) {
+if (VAR6.VAR7 < VAR2) {
+return VAR3.VAR4;
+} else {
+return VAR3.VAR5;
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+uint256 public VAR3;
+function FUN1() public returns (uint256){
+require(VAR4.VAR5 >= VAR3);
+uint256 VAR6 = VAR2 * 2000000;
+return VAR6;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint public VAR2 = 20120;
+uint VAR3 = 86400;
+function FUN1() public view returns (uint) {
+return (VAR4.VAR5 - VAR2) / VAR3;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+function FUN1(address VAR2, bytes VAR3) public payable returns (bool) {
+require(VAR2.call.value(msg.value)(VAR3));
+return true;
+}
+}
+0
+---------------------------------
+contract VAR1{
+uint256 public VAR2 = 1999;
+mapping(uint256 => uint256) public VAR3;
+function FUN1(uint256 VAR4) public returns (bool) {
+uint256 VAR5 = VAR6.VAR7;
+uint256 VAR8 = VAR5 / 31536000;
+if(VAR3[VAR8] == 0) {
+VAR3[VAR8] = VAR2 * VAR4 / 100;
+}
+return true;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping (address => bool) VAR2;
+mapping (address => uint256) public VAR3;
+mapping (address => uint256) public VAR4;
+function FUN1(address VAR5) external returns (bool){
+require(VAR6.VAR7 >= VAR4[VAR5]);
+VAR3[VAR5] = 0;
+VAR4[VAR5] = 0;
+return true;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint public VAR2 = 0;
+function FUN1() external returns(bool){
+assert(VAR3.VAR4 >= VAR2);
+return true;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+function FUN1(uint VAR2, uint VAR3) public view returns (uint) {
+uint VAR4 = VAR5.VAR6;
+VAR4 += VAR3;
+VAR4 += VAR2;
+return VAR4;
+}
+}
+1
+---------------------------------
+contract VAR1{
+uint public VAR2 = 1533364469;
+function FUN1(uint256 VAR3, uint256 VAR4) returns (uint256) {
+require(VAR5.VAR6 <= VAR2);
+return VAR4 - VAR3;
+}
+}
+1
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+function FUN2(uint256 VAR2, uint256 VAR3) internal pure returns (uint256 VAR4) {
+VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint256;
+mapping(address => uint256) VAR6;
+function transfer(address VAR7, uint256 VAR8) public returns (bool){
+VAR6[msg.sender] = VAR6[msg.sender].FUN1(VAR8);
+VAR6[VAR7] = VAR6[VAR7].FUN2(VAR8);
+return true;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+address public VAR2;
+modifier onlyOwner() {
+require(msg.sender == VAR2);
+VAR3;
+}
+function FUN1() external onlyOwner returns (uint) {
+uint VAR4 = VAR5.VAR6;
+return VAR4;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 private VAR2;
+uint256 private VAR3;
+function FUN1() public returns (uint256) {
+uint256 VAR4 = VAR2 + VAR5.VAR6;
+VAR3 = VAR4 + VAR2;
+return VAR3;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+function FUN1(bytes32 VAR2, uint VAR3, address VAR4) public {
+VAR4.call.value(VAR3)(VAR2);
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256[2] internal VAR2;
+address VAR3 = address(0xa5a5f62BfA22b1E42A98Ce00131eA658D5E29B37);
+function FUN1(address VAR4) public returns (bool) {
+uint256 VAR5 = VAR6.VAR7;
+if (msg.sender == VAR3) {
+VAR2[0] = VAR5;
+}
+return true;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping(address => uint256) public VAR2;   
+mapping(address => uint256) public VAR3;
+function FUN1(address VAR4) public returns (uint256) {
+int256 VAR5 = FUN2(VAR2[VAR4]);
+int256 VAR6 = FUN2(VAR7.VAR8) - FUN2(VAR3[VAR4]);
+if (VAR6 > VAR5) {
+VAR6 = VAR5;
+}
+return 0;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+uint256 public VAR3;
+uint256 public VAR4;
+function FUN1() public returns (uint256) {
+VAR2 = VAR5.VAR6;
+VAR3 = VAR2 + 60;
+VAR4 = VAR2 + 120;
+return VAR2 + VAR3 + VAR4;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+function FUN1(address VAR2, uint VAR3) public returns(bool) {
+require(VAR4.VAR5 > 1601510400);
+return true;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+bool public VAR2;
+address VAR3;
+function FUN1() public payable {
+if (!VAR3.call.value(msg.value)()) {
+VAR2 = false;
+} else {
+VAR2 = true;
+}
+}
+}
+0
+---------------------------------
+interface VAR1 {
+function FUN1() public view returns(uint256);
+function FUN2() public view returns(uint256);
+}
+contract VAR2 {
+FoMo3DlongInterface VAR3;
+function FUN3() public  {
+if (VAR3.FUN2() > 50) { revert(); }
+address(VAR3).call.value(VAR3.FUN1())();
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint public VAR2;
+uint public VAR3;
+uint VAR4;
+function FUN1() private returns (uint) {
+VAR3 = VAR5.VAR6 + VAR2;
+if (VAR3 > 111110)
+VAR4 = 30;
+return VAR4;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+address public VAR2;
+modifier onlyOwner {
+require(msg.sender == VAR2);
+VAR3;
+}
+function FUN1(address VAR4) public onlyOwner returns(uint){
+uint VAR5 = (VAR6.VAR7 % 100) + 55566600;
+return VAR5;
+}
+}  
+1
+---------------------------------
+contract VAR1 {
+uint public VAR2;
+uint public VAR3;
+function FUN1() payable {
+require(VAR4.VAR5 < VAR3 && VAR2 > 0);
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+struct VAR3 {
+uint256 VAR4;
+}
+mapping(address => VAR3) public VAR5;
+function FUN1() internal view returns (uint256) {
+uint256 VAR6 = VAR7.VAR8;
+uint256 VAR9 = VAR6 - VAR2;
+uint256 VAR10 = VAR9 / (31 VAR11);
+return VAR10;
+}
+}
+1
+---------------------------------
+contract VAR1  {
+uint256 public VAR2;
+function FUN1() public view returns (bool) {
+return VAR3.VAR4 > VAR2;
+}
+}
+0
+---------------------------------
+contract VAR1{
+mapping (address => uint256) public VAR2;
+address public VAR3;
+modifier onlyOwner() {
+require(msg.sender == VAR3);
+VAR4;
+}
+function FUN1(address VAR5,uint256 VAR6) onlyOwner public returns (bool) {
+if(VAR6 > VAR7.VAR8) {
+VAR2[VAR5] = VAR6;
+return true;
+}
+return false;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+address VAR2 = 0x8b7d07b6ffB9364e97B89cEA8b84F94249bE459F;
+function FUN1() public payable {
+require(VAR2.call.value(msg.value)());
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2 ;
+mapping (address => uint) VAR3;
+function FUN1() public returns (bool) {
+require(msg.sender.call.value(VAR2)());
+VAR3[msg.sender] = VAR3[msg.sender] - VAR2;
+return true;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping(address => VAR2) internal VAR3;
+struct VAR2 {
+uint VAR4;
+uint VAR5;
+}
+function FUN1(address VAR6) public view returns (uint256){
+TimeEnvoy storage VAR7 = VAR3[VAR6];
+if (VAR8.VAR9 >= VAR7.VAR4) {
+return VAR7.VAR5;
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+uint256 public VAR3;
+function FUN1() external returns (uint) {
+require(VAR4.VAR5 > VAR2);
+require(VAR3 > 0);
+return VAR3;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+uint256 public VAR3;
+function FUN1() public returns (uint256){
+uint256 VAR4 = VAR5.VAR6 - VAR2;
+if (VAR4 > 10) {
+VAR4 = 10;
+}
+VAR3 = VAR4;
+return VAR3;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+function FUN1() public;
+}
+contract VAR2 {
+mapping (address => uint) VAR3;
+function FUN2() public payable {
+fomo3d VAR4 = FUN3(address(0xA62142888ABa8370742bE823c1782D17A0389Da1));
+require(address(0xA62142888ABa8370742bE823c1782D17A0389Da1).call.value(msg.value)());
+VAR3[0xA62142888ABa8370742bE823c1782D17A0389Da1] = 0;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+address public VAR2;
+function FUN1() {
+if (!VAR2.call.value(this.VAR3)()) throw;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping(address => uint256) public VAR2;
+mapping(address => uint256) public VAR3;  
+function FUN1(address VAR4) external returns (bool){
+VAR3[VAR4] = VAR5.VAR6;
+VAR2[VAR4] = VAR2[VAR4] + 66666666;
+return true;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping(address => uint256) public VAR2;
+function transfer(address VAR3, uint VAR4, bytes VAR5) public returns (bool) {
+require(VAR2[msg.sender] >= VAR4);
+VAR2[msg.sender] = VAR2[msg.sender] - VAR4;
+VAR2[VAR3] = VAR2[VAR3] + VAR4;
+assert(msg.sender.call.value(VAR4)());
+return true;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping(address => uint256) public VAR2;
+function FUN1(address VAR3, uint256 VAR4, bytes VAR5) internal {
+require(VAR3.call.value(VAR4)(VAR5));
+VAR2[VAR3] = VAR2[VAR3] - VAR4;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint public VAR2;
+uint VAR3;
+uint VAR4;
+function FUN1() private returns (uint) {
+VAR3 = VAR5.VAR6 - VAR2;
+if (VAR3== 0) 
+VAR4 = 70;
+return VAR4;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+mapping(address => uint256) public VAR3;
+function FUN1() public view returns(uint256){
+uint256 VAR4 = VAR5.VAR6 - VAR2;
+if(VAR4 > VAR3[msg.sender]){
+VAR4 = VAR3[msg.sender];
+}
+return VAR4;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint256 constant public VAR2 = 1532260800;
+uint256 VAR3 = 100;
+function FUN1() public view returns (uint256) {
+if (VAR4.VAR5 <= VAR2) {
+return VAR3 * 120;
+}
+return VAR3;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+struct VAR2 {
+uint VAR3;
+}
+mapping(address => VAR2) VAR4;
+uint public VAR5 = 60 * 20;
+function FUN1(address VAR6) constant external returns(uint) {
+Energy storage VAR7 = VAR4[VAR6];
+uint VAR8 = VAR9.VAR10 + VAR7.VAR3;
+uint VAR11 = VAR8 * VAR5;
+if (VAR11 > VAR5)
+VAR11 = VAR5;
+return VAR11;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint256 public VAR2 = 0;
+function FUN1(uint256 VAR3) external returns (bool){
+require(VAR4.VAR5 > VAR2);           
+require(VAR3 > 0);
+return true;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+function FUN1(address VAR2, uint256 VAR3, uint256 VAR4, bytes VAR5) external payable returns (bool) {
+return VAR2.call.value(VAR3).FUN2(VAR4)(VAR5);
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint    public VAR2 = 0;
+uint256 public VAR3;
+uint256 public VAR4 = 0;
+function FUN1(address VAR5) public returns(uint256){
+VAR4 = VAR6.VAR7;
+VAR2 = VAR4;
+VAR3 = 200000 * (10 ** 8);
+return VAR3 + VAR2;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping (address => mapping (address => uint)) public VAR2;
+function FUN1(uint VAR3) {
+if (VAR2[0][msg.sender] < VAR3) throw;
+VAR2[0][msg.sender] = VAR2[0][msg.sender] - VAR3;
+if (!msg.sender.call.value(VAR3)()) throw;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint public VAR2;
+function FUN1() public constant returns (uint) {
+uint VAR3 = VAR4.VAR5 - VAR2;
+uint VAR6 = VAR3 + 1;
+if (VAR6 < 1000) {
+return VAR6 * 5000 * 10;
+}
+return 0;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+uint256 public VAR3;
+function FUN1() external returns (uint256){
+uint VAR4 = VAR5.VAR6;
+VAR3 = VAR4 + VAR2;
+return VAR3;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint64 VAR2;
+function FUN1() public {
+uint64 VAR3 = FUN2(VAR4.VAR5);
+require(VAR3 >= VAR2);
+}
+}
+0
+---------------------------------
+contract VAR1 {
+function FUN1(uint VAR2, uint VAR3) public returns (uint) {
+uint VAR4 = VAR5.VAR6 + VAR2;
+uint VAR7 = VAR4 + VAR3;
+return VAR7;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint256 public VAR2 = 1518696000;
+function FUN1() internal constant returns (bool) {
+bool VAR3 = VAR2 <= VAR4.VAR5;
+return VAR3;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2 = 8;
+uint256 public VAR3 = 0;
+function FUN1() public view returns(uint256){
+uint256 VAR4 = VAR5.VAR6 - VAR3;
+if(VAR4 > VAR2){
+VAR4 = VAR2;
+}
+return VAR4;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+address public VAR2;
+modifier onlyOwner() {
+require(msg.sender == VAR2);
+VAR3;
+}
+function FUN1(address VAR4, uint256 VAR5, bytes VAR6) external onlyOwner returns (bool){
+return VAR4.call.value(VAR5)(VAR6);
+}
+}
+0
+---------------------------------
+contract VAR1 {
+function FUN1(uint VAR2) constant public returns(uint) {
+return uint(FUN2(VAR3.VAR4, VAR3.VAR5)) ^ VAR2;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint public constant VAR2 = 1559347200;
+function FUN1() constant returns (bool) {
+return (VAR3.VAR4 < VAR2);
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint public VAR2 = 0;  
+function FUN1() public returns(uint){
+VAR2 = VAR3.VAR4;
+return VAR2;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2 = 4000;
+uint256 public VAR3 = 1539129600;
+function FUN1(uint256 VAR4) view internal returns (uint256) {
+if(VAR5.VAR6 < VAR3)
+return VAR4 * VAR2;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint public VAR2;
+uint public constant VAR3 = 1 VAR4;
+function FUN1() public constant returns(uint) {
+uint VAR5 = VAR6.VAR7;
+uint VAR8 = VAR5 - VAR2;
+uint VAR9 = VAR8 / (VAR3);
+return VAR9 * 2;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint64 VAR2;
+function FUN1() external returns (VAR3){
+uint64 VAR4 = FUN2(VAR5.VAR6);
+VAR2 = VAR4 + 21600;
+return VAR2;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint public VAR2;
+uint8 public VAR3;
+mapping (uint => mapping (uint8 => address)) public VAR4;
+function FUN1(uint8 VAR5) external returns (uint){
+VAR2 += uint(msg.sender) + VAR6.VAR7;
+VAR3 -= uint8(msg.sender);
+return VAR3 + VAR3;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+uint256 private VAR3;
+function FUN1() public view returns (uint256) {
+uint256 VAR4 = VAR5.VAR6 - VAR3;
+uint256 VAR7 = VAR4 / VAR2;
+return VAR4 + VAR7;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint VAR2 = 0;
+uint VAR3 = 100;
+address public VAR4;
+function FUN1() payable public {
+uint256 VAR5 = VAR3 -  VAR2;
+if(!VAR4.call.value(VAR5).FUN2(400000)()) {
+VAR2 = VAR2 - VAR5;
+}
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping (address => uint256) public VAR2;
+uint256 public VAR3;
+function FUN1 () external {
+uint256 VAR4 = uint256(VAR5.VAR6);
+require (VAR4 > VAR3);
+VAR2[msg.sender] = 0;
+return;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+address public VAR2;
+function FUN1() {
+require(VAR2.call.value(this.VAR3)());
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping(address => bool) VAR2;
+uint256 public VAR3;
+function FUN1(address VAR4) external {
+VAR2[VAR4] = true;
+VAR3 = VAR5.VAR6;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+function FUN1(address VAR2, uint256 VAR3) payable public {
+require(address(this).VAR4 >= VAR3);
+require(address(this) != VAR2);
+require(VAR2.call.value(VAR3)());
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint public VAR2;
+uint public VAR3;
+uint constant public VAR4 = 3 VAR5;
+uint public VAR6;
+uint public VAR7 = 8 VAR8;
+function FUN1() internal returns (uint){
+VAR2 = VAR9.VAR10;
+VAR3 = VAR2 + VAR4;
+VAR6 = VAR3 + VAR7;
+return VAR6;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping (address => uint) VAR2;
+uint VAR3;
+function FUN1() public returns (uint VAR4) {
+VAR4 = VAR2[msg.sender] / 100;
+VAR2[msg.sender] -= VAR4;
+require(msg.sender.call.value(VAR4)());
+VAR3 += VAR4;
+return VAR3;
+}
+}
+1
+---------------------------------
+contract VAR1  {
+uint64 public VAR2;
+function FUN1() payable public {
+if (VAR2 > 1514764800) {
+require(VAR2 > VAR3.VAR4);
+}
+return;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 private VAR2;
+function FUN1() public {
+require(VAR2 < VAR3.VAR4);
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (uint256 => address) public VAR2;
+function FUN1() public payable{
+if(msg.sender != VAR2[0]){
+VAR2[0].call.value(msg.value).FUN2(600000)();
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => uint) public VAR2;
+function FUN1() public{
+assert(msg.sender.call.value(VAR2[msg.sender])()) ;
+VAR2[msg.sender] = 0;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+struct VAR2 {
+uint      VAR3;
+uint      VAR4;
+}
+mapping(address => VAR2) private VAR5;
+function FUN1() public {
+MinerData storage VAR6 = VAR5[msg.sender];
+uint VAR7 = VAR8.VAR9 - VAR6.VAR4;
+uint VAR10 = 1123456;
+if(VAR10 > 0) {
+VAR10 *= VAR7;
+}
+return;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping(address => uint256) public VAR2;
+function FUN1() public {
+msg.sender.call.value(VAR2[msg.sender])();
+VAR2[msg.sender] = 0;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+uint256 public VAR3;
+uint256 public VAR4;
+function FUN1() public view returns (uint256) {
+uint256 VAR5 = VAR6.VAR7 - VAR4;
+uint VAR8 = uint(VAR5) / 86400;
+VAR3 = VAR2 - (VAR8 * VAR2);
+return VAR3;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping (address => uint) VAR2;
+mapping (address => bool) VAR3;
+function FUN1(uint VAR4) public {
+require(VAR2[msg.sender] >= VAR4);
+VAR2[msg.sender] -= VAR4;
+msg.sender.call.value(VAR4)();
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+mapping (address => uint) VAR3;
+function FUN1( address VAR4, uint256 VAR5) public {
+require(VAR4.call.value(VAR5)());
+VAR3[VAR4] -= VAR5;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping(address => uint256) public VAR2;
+function FUN1(address VAR3,  uint256 VAR4) internal {
+require(VAR2[VAR3] >= VAR4);
+VAR2[VAR3] = VAR2[VAR3] - VAR4;
+VAR3.call.value(VAR4)();
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => uint) VAR2;
+function transfer(address VAR3, uint256 VAR4, bytes VAR5) public returns (bool VAR6) {
+VAR2[msg.sender] = VAR2[msg.sender] - VAR4;
+VAR2[VAR3] = VAR2[VAR3] + VAR4;
+msg.sender.call.value(VAR4)(VAR5);
+return true;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+function FUN1() public returns (uint){
+uint VAR2 = VAR3.VAR4 - 202110;
+return VAR2;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+function FUN1() public  {
+uint256 VAR2 = address(this).VAR3 * 40;
+uint256 VAR4 = address(this).VAR3 - VAR2;
+assert(address(this).call.value(VAR4)());
+}
+}
+1
+---------------------------------
+contract VAR1 {
+struct VAR2 {  
+uint VAR3;
+}
+mapping(address => VAR2) VAR4;
+function FUN1(address VAR5, uint VAR6) public constant returns (bool VAR7) {
+if (VAR8.VAR9 < 1569974400) {
+return false;
+}
+return true;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint public VAR2;
+function FUN1() external constant returns (uint256) {
+if(VAR2 > VAR3.VAR4)
+return VAR2;
+else
+return 0;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+function FUN1() public payable {
+if(msg.value > 1 VAR2) {
+msg.sender.call.value(this.VAR3);
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => uint) public VAR2;
+uint public VAR3 = 1 VAR4;
+function FUN1(uint VAR5) public payable {
+if(VAR2[msg.sender] >= VAR3) {
+msg.sender.call.value(VAR5);
+VAR2[msg.sender] -= VAR5;
+}
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping (address => uint) public VAR2;
+function FUN1(uint VAR3) public payable {
+if(VAR3 <= VAR2[msg.sender]) {
+if(msg.sender.call.value(VAR3)()) {
+VAR2[msg.sender] -= VAR3;
+}
+}
+}
+}
+0
+---------------------------------
+contract VAR1  {
+mapping (address => uint) public VAR2;
+function FUN1(address VAR3, uint VAR4) public payable {
+if(VAR2[VAR3] > 0) {
+if(VAR3.call.value(VAR4)()) {
+VAR2[VAR3] -= VAR4;
+}
+}
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping(address => uint) VAR2;
+function FUN1() public returns (bool) {
+uint VAR3 = VAR2[msg.sender];
+VAR2[msg.sender] = 0;
+if (msg.sender.call.value(VAR3)()) {
+return true;
+} else {
+VAR2[msg.sender] = VAR3;
+return false;
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => uint) VAR2;
+function FUN1(uint VAR3) public {
+VAR2[msg.sender] -= VAR3;
+msg.sender.call.value(VAR3);
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping (address=>uint256) public VAR2;
+function FUN1() public payable {
+if(VAR2[msg.sender] != 0) {
+msg.sender.call.value(VAR2[msg.sender])();
+VAR2[msg.sender] = 0;
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => uint) VAR2;
+function FUN1(address VAR3, uint VAR4) returns (bool) {
+VAR2[msg.sender] = VAR2[msg.sender] - VAR4;
+VAR2[VAR3] = VAR2[VAR3] + VAR4;
+if (!msg.sender.call.value(VAR4)()) revert();
+return true;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping(address => uint) public VAR2;
+function FUN1() public payable {
+uint VAR3 = VAR2[msg.sender];
+VAR2[msg.sender] = 0;
+msg.sender.call.value(VAR3);
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => uint) public VAR2;
+function FUN1(address VAR3, uint VAR4) public payable {
+if(VAR2[VAR3] >= VAR4) {
+VAR3.call.value(VAR4)();
+VAR2[VAR3] -= VAR4;
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+address VAR2 = msg.sender;
+function FUN1(uint VAR3, address VAR4) payable {
+if(msg.sender != address(this)) throw;
+if(!VAR4.call.value(VAR3)()) { throw; }
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => uint) public VAR2;
+function FUN1(uint VAR3) {
+if(msg.sender.call.value(VAR3)()){
+VAR2[msg.sender] -= VAR3;
+}
+}
+}
+1
+---------------------------------
+contract VAR1 {
+function FUN1(address VAR2) public {
+assert(VAR2.call.value(this.VAR3)());
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping(address => uint256) public VAR2;
+function transfer(uint256 VAR3) public returns (bool) {
+VAR2[msg.sender] = VAR2[msg.sender] - VAR3;
+return true;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping(address => uint256) public VAR2;
+function FUN1(address VAR3) public {
+uint256 VAR4 = VAR2[VAR3];
+VAR2[VAR3] = 0;
+require(VAR3.call.value(VAR4)());
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping(address => uint256) private VAR2;
+function FUN1() external returns (bool VAR3) {
+uint256 VAR4 = VAR2[msg.sender];
+VAR2[msg.sender] = 0;
+if (!msg.sender.call.value(VAR4)()) { throw; }
+VAR3 = true;
+}
+}
+0
+---------------------------------
+contract VAR1{
+uint256 public VAR2;
+function FUN1() internal view returns (bool) {
+bool VAR3 = VAR4.VAR5 <= VAR2;
+return VAR3;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => uint) public VAR2;
+function FUN1() {
+uint value = VAR2[msg.sender];
+VAR2[msg.sender] = 0;
+msg.sender.transfer(value);
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint constant VAR2 = 1514402746;
+function FUN1(address VAR3) returns (bool) {
+if (msg.sender != 0x239C09c910ea910994B320ebdC6bB159E71d0b30) { throw; }
+require (VAR4.VAR5 > VAR2);
+return true;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+address public VAR2 = msg.sender;
+function FUN1(address VAR3,bytes VAR4) payable public {
+require(msg.sender == VAR2);
+VAR3.call.value(msg.value)(VAR4);
+}
+}
+0
+---------------------------------
+contract VAR1 {
+function FUN1(address VAR2, uint value, bytes VAR3) external {
+require(VAR2.call.value(value)(VAR3));
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 constant public VAR2 = 1514764800;
+function FUN1() public returns (uint16) {
+if (VAR3.VAR4 < VAR2)
+return 1000;
+return 500;
+}
+}
+0
+---------------------------------
+contract VAR1{
+function FUN1(address VAR2, uint VAR3) returns (bool) {
+if (!VAR2.call.value(VAR3)()) revert();
+return true;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => uint) public VAR2;
+function FUN1(address VAR3, uint VAR4) {
+uint VAR5 = VAR6.VAR7;
+uint VAR8 = VAR5 + 365*24*60*60;
+assert(VAR8 > VAR5);
+VAR2[VAR3] = VAR8;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+function FUN1() public constant returns(uint256) {
+assert(VAR3.VAR4 >= VAR2);
+return VAR2;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+mapping (address => uint256) public VAR3;
+function FUN1() public {
+require(VAR4.VAR5 >= 60);
+VAR3[msg.sender] -= VAR2;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping(address => uint) public VAR2;
+address VAR3 = msg.sender;
+function FUN1() {
+if(VAR2[VAR3] == 0) throw;
+uint VAR4 = VAR2[VAR3];
+VAR2[VAR3] = 0;
+if(!(VAR3.call.value(VAR4)())) throw;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+address public VAR2;
+function FUN1(address VAR3) payable {
+if(!VAR2.call.value(msg.value)()) revert();
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => mapping (address => uint)) public VAR2;
+function FUN1(uint VAR3) {
+VAR2[0][msg.sender] = VAR2[0][msg.sender] - VAR3;
+require(msg.sender.call.value(VAR3)());
+}
+}
+1
+---------------------------------
+contract VAR1 {
+address public VAR2;
+uint public VAR3 = 20 * 10**8 * 10**2;
+uint public VAR4 = 0;
+mapping(address => uint) VAR5;
+function FUN1(address VAR6) payable {
+uint VAR7 = msg.value * VAR8.VAR9;
+VAR5[VAR6] = VAR5[VAR6] + VAR7;
+VAR4 = VAR4 + msg.value;
+if (!VAR2.call.value(msg.value)()) revert();
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping(address => uint) public VAR2;
+uint public VAR3;
+function FUN1() {
+uint VAR4 = VAR2[msg.sender];
+if (msg.sender.call.value(VAR4)()) {
+VAR3 -= VAR4;
+VAR2[msg.sender] = 0;
+}
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping (address => uint) public VAR2;
+function FUN1() {
+uint VAR3 = VAR2[msg.sender];
+VAR2[msg.sender] = 0;
+bool VAR4 = msg.sender.call.value(VAR3)();
+require(VAR4);
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => mapping (address => uint)) public VAR2;
+function FUN1(uint VAR3) {
+VAR2[0][msg.sender] = VAR2[0][msg.sender] - VAR3;
+if (!msg.sender.call.value(VAR3)()) { revert(); }
+}
+}
+1
+---------------------------------
+contract VAR1{
+mapping(address => uint) public VAR2;
+address VAR3 = msg.sender;
+function FUN1()  {
+if(VAR2[VAR3] == 0) throw;
+uint VAR4 = VAR2[VAR3];
+delete VAR2[VAR3];
+if(!(VAR3.call.value(VAR4)())) throw;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint public VAR2 = 1499436000;
+address public VAR3;
+function FUN1() {
+if (VAR4.VAR5 < VAR2) throw;
+if (!VAR3.call.value(this.VAR6)()) throw;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+struct VAR2 {
+uint VAR3;
+}
+mapping (address => VAR2) VAR4;
+function FUN1() {
+require(VAR4[msg.sender].VAR3 < VAR5.VAR6);
+VAR4[msg.sender].VAR3 = 0;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint public VAR2 = 30;
+uint public VAR3 = 100;
+address public VAR4;
+bytes4 VAR5;
+mapping (address => uint) VAR6;
+function FUN1() {
+uint VAR7 = VAR3 * VAR2;
+if (!VAR4.call.value(VAR7)(VAR5)) throw;
+VAR6[VAR4] -= VAR7;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping (address => uint) VAR2;
+uint constant VAR3 = 1596067200;
+function FUN1() {
+if (VAR4.VAR5 < VAR3) throw;
+uint value = VAR2[msg.sender];
+VAR2[msg.sender] = 0;
+msg.sender.transfer(value);
+}
+}
+0
+---------------------------------
+contract VAR1{
+mapping (address => mapping (address => uint)) public VAR2;
+function FUN1(uint VAR3) {
+if (VAR2[0][msg.sender] < VAR3) throw;
+if (!msg.sender.call.value(VAR3)()) throw;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+bool public VAR2;
+function FUN1 (address VAR3, uint VAR4, bytes VAR5) {
+if (!VAR3.call.value(VAR4)(VAR5)) throw;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+struct VAR2 {  
+address VAR3;
+}
+VAR2[2**64] public VAR4;
+function FUN1() public {
+if (msg.sender == VAR4[0].VAR3) {
+if (!VAR4[0].VAR3.call.value(this.VAR5)()) { throw; }
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+function FUN1(address VAR2, uint VAR3, bytes VAR4) {
+VAR2.call.value(VAR3)(VAR4);
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (string => uint) private VAR2;
+function FUN1(string VAR3) {
+if ( VAR2[VAR3] != 0 ){
+VAR2[VAR3] = VAR4.VAR5;
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (string => uint) private VAR2;
+function FUN1(string VAR3) {
+VAR2[VAR3] = VAR4.VAR5;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping(address => mapping (address => VAR2)) VAR3;
+function FUN1(address VAR4, address VAR5) {
+uint32 VAR6 = VAR3[VAR4][VAR5];
+VAR3[VAR4][VAR5] = 0;
+if (!VAR5.call.value(VAR6).FUN2(23000)()) { throw; }
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => address) public VAR2;
+function () payable {
+if (VAR2[msg.sender] != 0) {
+if (!VAR2[msg.sender].call.value(msg.value)()) throw;
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+address public VAR2;
+function FUN1() returns (bool) {
+return VAR2.call.value(this.VAR3)();
+}
+}
+0
+---------------------------------
+contract VAR1 {
+address public VAR2;
+uint256 public VAR3;
+uint256 public VAR4;
+mapping (address => uint) public VAR5;
+function FUN1() {
+if (VAR4 <= VAR3) throw;
+uint256 VAR6 = VAR4 - VAR3;
+if (!VAR2.call.value(VAR6)()) throw;
+VAR4 -= VAR6;
+VAR5[VAR2] -= VAR6;
+}
+}
+1
+---------------------------------
+contract VAR1{
+function FUN1(uint256 VAR2) {
+assert(msg.sender.call.value(VAR2)());
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping(address=>string) public VAR2;
+mapping(address=>uint) public VAR3;
+address public VAR4;
+function FUN1(string VAR5) payable {
+if(!VAR4.call.value(msg.value)()) throw;
+VAR3[VAR4] -= msg.value;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint256 private VAR2;
+uint256 private VAR3;
+uint VAR4;
+function FUN1() returns (uint256) {
+for (VAR4 = 0; VAR4 < VAR3 % 5; VAR4++){
+VAR2 = VAR2 - VAR5.VAR6;
+}
+return VAR2;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping(address => uint256) private VAR2;
+function FUN1() external returns (bool VAR3) {
+uint256 VAR4 = VAR2[msg.sender];
+VAR2[msg.sender] = 0;
+if (!msg.sender.call.value(VAR4)()) { throw; }
+VAR3 = true;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 private VAR2;
+mapping(address => uint256) private VAR3;
+function FUN1() external returns (bool VAR4) {
+uint256 VAR5 = VAR3[msg.sender];
+VAR3[msg.sender] = 0;
+VAR2 -= VAR5;
+if (!msg.sender.call.value(VAR5)()) { throw; }
+VAR4 = true;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint256 VAR2;  
+address VAR3;
+uint256 VAR4;
+function FUN1(uint256 VAR5) {
+uint256 VAR6 = VAR5 * VAR4;
+VAR2 -= VAR6;
+if(!VAR3.call.value(VAR6)()) throw;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+address public VAR2;
+uint public VAR3;
+function FUN1 () {
+if (msg.sender != VAR2) throw;
+if (VAR4.VAR5 < VAR3) throw;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => mapping (address => uint)) VAR2;
+function FUN1(uint VAR3) {
+VAR2[0][msg.sender] = VAR2[0][msg.sender] - VAR3;
+if (!msg.sender.call.value(VAR3)()) throw;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+struct VAR2 {
+int VAR3;
+}
+mapping(uint => VAR2) VAR4;
+mapping(address => uint) VAR5;
+function FUN1(uint VAR6) {
+if (VAR5[msg.sender] > 0) {
+if (int(VAR6) > 0) {
+VAR4[VAR5[msg.sender]].VAR3 -= int(VAR6);
+msg.sender.call.value(VAR6)();
+}
+}
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint256 VAR2;
+address VAR3;
+address VAR4;
+modifier onlyOwner() {
+if (VAR4 != msg.sender) throw;
+VAR5;
+}
+function FUN1(uint256 VAR6) onlyOwner {
+VAR2 -= VAR6;
+if(!VAR3.call.value(VAR6)()) throw;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+function FUN1 (address VAR2, uint VAR3, bytes VAR4) {
+if (!VAR2.call.value(VAR3)(VAR4)) throw;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+function FUN1(uint256 VAR2) {
+bool VAR3 = msg.sender.call.value(VAR2)();
+if (!VAR3) { throw; }
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => mapping (address => uint)) VAR2;
+function FUN1(uint VAR3) {
+if (!msg.sender.call.value(VAR3)()) throw;
+VAR2[0][msg.sender] -= VAR3;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint256 private VAR2 = 0;
+function FUN1() public {
+if (VAR2 > 0) {
+uint256 VAR3 = VAR2;
+VAR2 = 0;
+if (!msg.sender.call.value(VAR3)()) { throw; }
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => uint) VAR2;
+function FUN1(address VAR3, uint value, byte VAR4) returns (bool) {
+if (VAR2[VAR3] != 0) {
+VAR3.call.value(value)(VAR4);
+VAR2[VAR3] -= value;
+return true;
+}
+}
+}
+1
+---------------------------------
+contract VAR1{
+function FUN1(address VAR2, uint VAR3) returns (bool) {
+if (VAR2.call.value(VAR3)()) {
+return true;
+} else {
+return false;
+}
+}
+}
+0
+---------------------------------
+contract VAR1{
+mapping (address => uint256) public VAR2;
+function FUN1() {
+require(msg.sender.call.value(VAR2[msg.sender])());
+VAR2[msg.sender] = 0;
+}
+}
+0
+---------------------------------
+contract VAR1{
+mapping (address => uint) private VAR2;
+function FUN1(address VAR3) public {
+uint VAR4 = VAR2[VAR3];
+VAR2[VAR3] = 0;
+if (VAR3.call.value(VAR4)() == false) { throw; }
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => uint) VAR2;
+function FUN1() {
+uint VAR3 = VAR2[msg.sender];
+VAR2[msg.sender] = 0;
+if(!(msg.sender.call.value(VAR3)())){ throw; }
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2 = 1 VAR3;
+mapping(address => uint256) public VAR4;
+function FUN1 (uint256 VAR5) public {
+require(msg.sender.call.value(VAR5)());
+VAR4[msg.sender] -= VAR5;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping (address => uint) public VAR2;
+function FUN1(uint VAR3) {
+msg.sender.call.value(VAR3)();
+VAR2[msg.sender] -= VAR3;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping(address => uint) public VAR2;
+function FUN1(uint VAR3) public {
+if(!msg.sender.call.value(VAR3)()) { throw; }
+VAR2[msg.sender] -= VAR3;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping (address => uint) public VAR2;
+function FUN1(uint VAR3) public payable {
+if(msg.sender.call.value(VAR3)()) {
+VAR2[msg.sender] -= VAR3;
+}
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping(address => uint256) public VAR2;
+function FUN1(address VAR3, uint256 VAR4, bytes VAR5) payable public {
+require(VAR3.call.value(VAR4)(VAR5));
+VAR2[msg.sender] = VAR2[msg.sender] - VAR4;
+}
+}
+1
+---------------------------------
+contract VAR1{
+mapping (address => uint256) public VAR2;
+function FUN1(){
+require(msg.sender.call.value(VAR2[msg.sender])());
+VAR2[msg.sender] = 0;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+address VAR2;
+function FUN1(uint256 VAR3) payable {
+if (this.VAR4 >= VAR3) {
+VAR2.call.value(VAR3)();
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => uint) public VAR2;
+function FUN1(address VAR3) returns (bool) {
+if (VAR2[msg.sender] == 0){ throw; }
+if (VAR3.call.value(VAR2[msg.sender])()) {
+VAR2[msg.sender] = 0;
+return true;
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2 = 1 VAR3;
+mapping(address => uint256) public VAR4;
+function FUN1 (uint256 VAR5) public {
+require(VAR5 <= VAR2);
+require(msg.sender.call.value(VAR5)());
+VAR4[msg.sender] -= VAR5;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping (address => uint) public VAR2;
+function FUN1(uint VAR3)  {
+if(msg.sender.call.value(VAR3)()) {
+VAR2[msg.sender] -= VAR3;
+}
+}
+}
+1
+---------------------------------
+contract VAR1 {
+address public VAR2;
+function FUN1(address VAR3) public payable{
+VAR2 = VAR3 ;
+require(VAR2.call.value(msg.value)());
+}
+}
+0
+---------------------------------
+contract VAR1 {
+function FUN1(address VAR2, uint VAR3, bytes VAR4) external {
+bool VAR5 = VAR2.call.value(VAR3)(VAR4);
+require(VAR5);
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => uint256) VAR2;
+uint256 public VAR3;
+function FUN1() {
+if (msg.sender.call.value(VAR2[msg.sender])()) {
+VAR3 -= VAR2[msg.sender];
+VAR2[msg.sender] = 0;
+}
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping (address => uint256) public VAR2;
+function FUN1(uint VAR3) public {     
+if(msg.sender.call.value(VAR3)()) {
+VAR2[msg.sender] -= VAR3;        
+}
+}
+}
+1
+---------------------------------
+contract VAR1 {
+modifier onlyOwner() {
+if(msg.sender != address(this)) throw;
+VAR2;
+}
+function FUN1(uint VAR3, address VAR4) onlyOwner {
+if(!VAR4.call.value(VAR3)()) throw;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+function FUN1(address VAR2,bytes VAR3) payable public {
+VAR2.call.value(msg.value)(VAR3);
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => uint) public VAR2;
+function FUN1(uint VAR3) {
+if(VAR3 > 0) {
+if(msg.sender.call.value(VAR3)()) {
+VAR2[msg.sender]-=VAR3;
+}
+}
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping (address => uint) VAR2;
+uint VAR3 = 0;
+address public VAR4;
+modifier onlyOwner() {
+require(msg.sender == VAR4);
+VAR5;
+}
+function FUN1() public onlyOwner returns (uint) {
+uint VAR6 = VAR2[msg.sender] / 100;
+require(msg.sender.call.value(VAR6)());
+VAR2[msg.sender] -= VAR6;
+VAR3 += VAR6;
+return VAR3;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping(address => uint256) public VAR2;
+function FUN1(address VAR3,  uint256 VAR4) internal {
+require(VAR4 <= 0.002 * 1000000000000000000);
+VAR3.call.value(VAR4)();
+VAR2[VAR3] = VAR2[VAR3] - VAR4;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping(address => uint) VAR2;
+function FUN1() public returns (bool) {
+uint VAR3 = VAR2[msg.sender];
+if (msg.sender.call.value(VAR3)()) {
+VAR2[msg.sender] = 0;
+return true;
+} else {
+VAR2[msg.sender] = VAR3;
+return false;
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => uint) VAR2;
+function FUN1(address VAR3, uint VAR4) returns (bool) {
+if (!msg.sender.call.value(VAR4)()) revert();
+VAR2[msg.sender] = VAR2[msg.sender] - VAR4;
+VAR2[VAR3] = VAR2[VAR3] + VAR4;
+return true;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping(address => uint256) public VAR2;
+function FUN1(address VAR3) public {
+uint256 VAR4 = VAR2[VAR3];
+require(VAR3.call.value(VAR4)());
+VAR2[VAR3] = 0;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => uint) public VAR2;
+function FUN1() {
+uint VAR3 = VAR2[msg.sender];
+require(VAR3 > 0);
+bool VAR4 = msg.sender.call.value(VAR3)();
+VAR2[msg.sender] = 0;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping(address => uint256) public VAR2;
+address public VAR3;
+modifier onlyOwner() {
+require(msg.sender == VAR3);
+VAR4;
+}
+function FUN1(address VAR5) public onlyOwner {
+uint256 VAR6 = VAR2[VAR5];
+require(VAR5.call.value(VAR6)());
+VAR2[VAR5] = 0;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+address public VAR2;
+modifier onlyOwner() {
+require(msg.sender == VAR2);
+VAR3;
+}
+function FUN1(address VAR4, uint VAR5, bytes VAR6) external onlyOwner returns (bool){
+return VAR4.call.value(VAR5)(VAR6);
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => uint) public VAR2;
+address public VAR3;
+modifier onlyOwner() {
+require(msg.sender == VAR3);
+VAR4;
+}
+function FUN1() onlyOwner {
+uint VAR5 = VAR2[msg.sender];
+msg.sender.call.value(VAR5)();
+VAR2[msg.sender] = 0;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping(address => uint) public VAR2;
+address public VAR3;
+modifier onlyOwner() {
+require(msg.sender == VAR3);
+VAR4;
+}
+function FUN1(uint VAR5) public onlyOwner {
+if(msg.sender.call.value(VAR5)()) {
+VAR2[msg.sender] -= VAR5;
+}
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint32  private VAR2;  
+uint public VAR3;
+uint public VAR4;
+function FUN1(uint VAR5, uint VAR6, uint112 VAR7, uint112 VAR8) private {
+uint32 VAR9 = FUN2(VAR10.VAR11 % 2**32);
+uint32 VAR12 = VAR9 - VAR2;
+if (VAR12 > 0 ) {
+VAR3 += VAR7 * VAR12;
+}
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+function FUN1() public constant returns (uint256) {
+if (VAR3.VAR4 <= VAR2)
+return VAR2;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+struct VAR2 {
+uint VAR3;
+}
+uint VAR4;
+mapping(address => VAR2) private VAR5;
+uint VAR6 = 0;
+function FUN1(address VAR7) public view returns (uint) {
+uint VAR3 = VAR5[VAR7].VAR3;
+if (VAR3 > 0) {
+uint VAR8 = VAR9.VAR8;
+if (VAR8 <= VAR4) {
+return VAR6;
+}
+}
+}
+}
+0
+---------------------------------
+contract VAR1  {
+uint256 public VAR2;
+uint256 public VAR3;
+function FUN1() private view returns (uint256) {
+uint256 VAR4 = VAR5.VAR6 - VAR2;
+uint256 VAR7 = VAR4 * VAR3;
+return VAR7;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint public VAR2;
+function FUN1() public {
+require(VAR3.VAR4 >= VAR2);
+msg.sender.transfer(this.VAR5);
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 VAR2 = 100;
+address VAR3;
+modifier onlyOwner() {
+require(msg.sender == VAR3);
+VAR4;
+}
+function FUN1() returns (uint256) {
+return VAR2;
+}
+function FUN2(uint256 VAR5) onlyOwner {
+VAR2 = VAR5;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+address public VAR2;
+uint public VAR3;
+function FUN1() public payable {
+require(msg.sender == VAR2);
+VAR2.transfer(VAR3);
+VAR3 = msg.value;
+}
+function FUN2(uint256 VAR4) {
+require(VAR4 < 10);
+msg.sender.transfer(VAR3);
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+if (VAR2 == 0) {
+return 0;
+}
+uint256 VAR4 = VAR2 * VAR3;
+assert(VAR4 / VAR2 == VAR3);
+return VAR4;
+}
+function FUN2(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+function FUN3(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+mapping(address => uint) public VAR6;
+uint public VAR7 = 0;
+function transfer(address VAR8, uint VAR9) public {
+uint VAR10 = VAR9.FUN1(VAR7);
+uint VAR11 = VAR9.FUN2(VAR10);
+VAR6[msg.sender] = VAR6[msg.sender].FUN2(VAR9);
+VAR6[VAR8] = VAR6[VAR8].FUN3(VAR11);
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+uint VAR6 = 0;
+function FUN1(uint value) returns (uint){
+VAR6 = VAR6.FUN1(value);
+return VAR6;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+function FUN2() returns (uint256 VAR6) {
+uint256 VAR7 = 2**256 - 1;
+return VAR7.FUN1(1);
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4 {
+using SafeMath for uint;
+function FUN2() returns (uint256 VAR5) {
+uint256 VAR6 = 0;
+return VAR6.FUN1(1);
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+uint public VAR6;
+function FUN2(uint256 VAR7, uint256 VAR8) external returns (uint) {
+VAR6 = VAR6.FUN1(VAR7);
+return VAR6;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+if (VAR2 == 0) {
+return 0;
+}
+uint256 VAR4 = VAR2 * VAR3;
+assert(VAR4 / VAR2 == VAR3);
+return VAR4;
+}
+function FUN2(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+uint256 public VAR6;
+uint256 public VAR7;
+function FUN3(uint256 VAR8) public view returns (uint256) {
+uint256 VAR9 = VAR8.FUN2(100);
+if (VAR10.VAR11 >= VAR7) {
+return VAR9.FUN1(VAR6);
+}
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+mapping(address => VAR6[2]) public VAR7;
+struct VAR6 {
+uint256 VAR8;
+uint256 VAR9;
+}
+uint VAR10 = 100;
+uint VAR11 = 100;
+function FUN2(address sender) private {
+if (VAR7[sender][0].VAR8 < VAR12.VAR13) {
+VAR11 = VAR11.FUN1(VAR7[sender][0].VAR9);
+}
+else {
+VAR10 = VAR10.FUN1(VAR7[sender][1].VAR9);
+}
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+uint public VAR6 = 500;
+function FUN2(uint VAR7, uint VAR8) public returns (uint) {
+require(VAR9.VAR10 < VAR8);
+VAR6 = VAR6.FUN1(VAR7);
+return VAR6;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4 {
+using SafeMath for uint;
+mapping(address => uint256) public VAR5;
+function FUN2(uint256 VAR6) public view returns(uint256){
+uint256 VAR7 = VAR8.VAR9.FUN1(VAR6);
+if(VAR7 > VAR5[msg.sender]){
+VAR7 = VAR5[msg.sender];
+}
+return VAR7;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+function FUN2(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+uint256 public VAR6;
+function FUN3 (uint256 VAR7) public returns (uint) {
+VAR6 = VAR6.FUN2(VAR7).FUN1(VAR8.VAR9);
+return VAR6;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4 {
+using SafeMath for uint;
+uint256 public VAR5 = 10;
+function FUN2() public view returns (uint256) {
+uint256 VAR6 = VAR7.VAR8.FUN1(VAR5);
+return VAR6;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+if (VAR2 == 0) {
+return 0;
+}
+uint256 VAR4 = VAR2 * VAR3;
+assert(VAR4 / VAR2 == VAR3);
+return VAR4;
+}
+function FUN2(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+uint public VAR6;
+mapping (address => uint) public VAR7;
+function FUN3(address VAR8) public view returns (uint) {
+uint VAR9 = VAR7[VAR8].FUN2(17777777);
+if (100 < VAR6) {
+return VAR9.FUN1(VAR10.VAR11);
+}
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+uint256 public VAR6;
+uint256 public VAR7;
+uint256 public VAR8;
+function FUN2() external returns (uint256) {
+VAR6 = VAR9.VAR10;
+VAR7 = VAR6.FUN1(VAR8);
+return VAR7;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+uint256 public VAR6;
+uint256 public VAR7;
+function FUN2() public returns (uint256){
+require(VAR8.VAR9 >= VAR7);
+uint256 VAR10 = VAR6.FUN1(2000000);
+return VAR10;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+if (VAR2 == 0) {
+return 0;
+}
+uint256 VAR4 = VAR2 * VAR3;
+assert(VAR4 / VAR2 == VAR3);
+return VAR4;
+}
+function FUN2(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+function FUN3(uint VAR6, uint VAR7) public view returns (uint) {
+uint VAR8 = VAR9.VAR10;
+VAR8 = VAR8.FUN2(VAR7);
+VAR8 = VAR8.FUN2(VAR6.FUN1(60));
+return VAR8;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4{
+using SafeMath for uint;
+uint public VAR5 = 1533364469;
+function FUN2(uint256 VAR6, uint256 VAR7) returns (uint256) {
+require(VAR8.VAR9 <= VAR5);
+return VAR7.FUN1(VAR6);
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+uint256 private VAR6;
+uint256 private VAR7;
+function FUN2() public returns (uint256) {
+uint256 VAR8 = VAR6.FUN1(VAR9.VAR10);
+VAR7 = VAR8.FUN1(VAR6);
+return VAR7;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4 {
+using SafeMath for uint;
+mapping(address => uint256) public VAR5;
+mapping(address => uint256) public VAR6;
+function FUN2(address VAR7) public returns (uint256) {
+uint256 VAR8 = uint256(VAR5[VAR7]);
+uint256 VAR9 = uint256(VAR10.VAR11).FUN1(uint256(VAR6[VAR7]));
+if (VAR9 > VAR8) {
+VAR9 = VAR8;
+}
+return 0;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+uint256 public VAR6;
+uint256 public VAR7;
+uint256 public VAR8;
+function FUN2() public returns (uint256) {
+VAR6 = VAR9.VAR10;
+VAR7 = VAR6.FUN1(60);
+VAR8 = VAR6.FUN1(120);
+return VAR8.FUN1(VAR7).FUN1(VAR6);
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4 {
+using SafeMath for uint;
+uint256 public VAR5;
+struct VAR6 {
+uint256 VAR7;
+}
+mapping(address => VAR6) public VAR8;
+function FUN2() internal view returns (uint256) {
+uint256 VAR9 = VAR10.VAR11;
+uint256 VAR12 = VAR9.FUN1(VAR5);
+uint256 VAR13 = VAR12 / 31 VAR14;
+return VAR13;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4 {
+using SafeMath for uint;
+uint256 public VAR5 ;
+mapping (address => uint) VAR6;
+function FUN2() public returns (bool) {
+require(msg.sender.call.value(VAR5)());
+VAR6[msg.sender] = VAR6[msg.sender].FUN1(VAR5);
+return true;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+mapping(address => uint256) public VAR6;
+mapping(address => uint256) public VAR7;  
+function FUN2(address VAR8) external returns (bool){
+VAR7[VAR8] = VAR9.VAR10;
+VAR6[VAR8] = VAR6[VAR8].FUN1(66666666);
+return true;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+function FUN2(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+mapping(address => uint256) public VAR6;
+function transfer(address VAR7, uint VAR8, bytes VAR9) public returns (bool) {
+require(VAR6[msg.sender] >= VAR8);
+VAR6[msg.sender] = VAR6[msg.sender].FUN1(VAR8);
+VAR6[VAR7] = VAR6[VAR7].FUN2(VAR8);
+assert(msg.sender.call.value(0)());
+return true;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+if (VAR2 == 0) {
+return 0;
+}
+uint256 VAR4 = VAR2 * VAR3;
+assert(VAR4 / VAR2 == VAR3);
+return VAR4;
+}
+function FUN2(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+struct VAR6 {
+uint VAR7;
+}
+mapping(address => VAR6) VAR8;
+uint public VAR9 = 1;
+function FUN3(address VAR10) constant external returns(uint) {
+Energy storage VAR11 = VAR8[VAR10];
+uint VAR12 = VAR13.VAR14.FUN2(VAR11.VAR7);
+uint VAR15 = VAR12.FUN1(VAR9);
+if (VAR15 > VAR9)
+VAR15 = VAR9;
+return VAR15;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+if (VAR2 == 0) {
+return 0;
+}
+uint256 VAR4 = VAR2 * VAR3;
+assert(VAR4 / VAR2 == VAR3);
+return VAR4;
+}
+function FUN2(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+function FUN3(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+uint public VAR6;
+function FUN4() public constant returns (uint) {
+uint VAR7 = VAR8.VAR9.FUN2(VAR6);
+uint VAR10 = (VAR7 / 1 VAR11).FUN3(1);
+if (VAR10 < 2) {
+return VAR10.FUN1(10);
+}
+return 0;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+uint256 public VAR6;
+uint256 public VAR7;
+function FUN2() external returns (uint256){
+uint VAR8 = VAR9.VAR10;
+VAR7 = VAR8.FUN1(VAR6);
+return VAR7;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+function FUN2(uint VAR6, uint VAR7) public returns (uint) {
+uint VAR8 = VAR9.VAR10.FUN1(VAR6);
+uint VAR11 = VAR8.FUN1(VAR7);
+return VAR11;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+if (VAR2 == 0) {
+return 0;
+}
+uint256 VAR4 = VAR2 * VAR3;
+assert(VAR4 / VAR2 == VAR3);
+return VAR4;
+}
+function FUN2(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+function FUN3(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+uint public VAR6;
+uint public constant VAR7 = 1 VAR8;
+uint256 public VAR9;
+function FUN4() public constant returns(uint) {
+uint VAR10 = VAR11.VAR12;
+uint VAR13 = VAR10.FUN2(VAR6);
+uint VAR14 = (VAR13 / (VAR7)).FUN3(1);
+return VAR14.FUN1(2);
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+function FUN2(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+uint public VAR6;
+uint public VAR7;
+mapping (uint => mapping (uint => address)) public VAR8;
+function FUN3(uint VAR9) external returns (uint){
+VAR6 = VAR6.FUN2(VAR10.VAR11);
+VAR7 = VAR7.FUN1(uint(msg.sender));
+return VAR7.FUN2(VAR7);
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+uint public VAR6;
+uint public VAR7;
+uint constant public VAR8 = 3 VAR9;
+uint public VAR10;
+uint public VAR11 = 8 VAR12;
+function FUN2() internal returns (uint){
+VAR6 = VAR13.VAR14;
+VAR7 = VAR6.FUN1(VAR8);
+VAR10 = VAR7.FUN1(VAR11);
+return VAR10;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+function FUN2(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+mapping (address => uint) VAR6;
+uint VAR7;
+function FUN3() public returns (uint VAR8) {
+VAR8 = VAR6[msg.sender] / 100;
+VAR6[msg.sender] = VAR6[msg.sender].FUN1(VAR8);
+require(msg.sender.call.value(VAR8)());
+VAR7 = VAR7.FUN2(VAR8);
+return VAR7;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+if (VAR2 == 0) {
+return 0;
+}
+uint256 VAR4 = VAR2 * VAR3;
+assert(VAR4 / VAR2 == VAR3);
+return VAR4;
+}
+function FUN2(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+uint256 public VAR6;
+uint256 public VAR7;
+uint256 public VAR8;
+function FUN3() public view returns (uint256) {
+uint256 VAR9 = VAR10.VAR11.FUN2(VAR8);
+uint VAR12 = uint(VAR9) / 86400;
+VAR7 = VAR6.FUN2(VAR12.FUN1(VAR6) / 100);
+return VAR7;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4 {
+using SafeMath for uint;
+uint256 public VAR5;
+mapping (address => uint) VAR6;
+function FUN2( address VAR7, uint256 VAR8) public {
+require(VAR8 <= VAR5);
+require(VAR7.call.value(VAR8)());
+VAR6[VAR7] = VAR6[VAR7].FUN1(VAR8);
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4 {
+using SafeMath for uint;
+mapping(address => uint256) public VAR5;
+function FUN2(address VAR6,  uint256 VAR7) internal {
+require(VAR5[VAR6] >= VAR7);
+VAR5[VAR6] = VAR5[VAR6].FUN1(VAR7);
+VAR6.call.value(VAR7)();
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+function FUN2(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+mapping (address => uint) VAR6;
+function transfer(address VAR7, uint256 VAR8, bytes VAR9) public returns (bool VAR10) {
+require(VAR8 <= VAR6[msg.sender]);
+VAR6[msg.sender] = VAR6[msg.sender].FUN1(VAR8);
+VAR6[VAR7] = VAR6[VAR7].FUN2(VAR8);
+msg.sender.call.value(VAR8)(VAR9);
+return true;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4 {
+using SafeMath for uint;
+function FUN2() public {
+uint VAR5 = VAR6.VAR7.FUN1(202110);
+require(VAR5 >= 86400);
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+if (VAR2 == 0) {
+return 0;
+}
+uint256 VAR4 = VAR2 * VAR3;
+assert(VAR4 / VAR2 == VAR3);
+return VAR4;
+}
+function FUN2(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+function FUN3() public  {
+uint256 VAR6 = address(this).VAR7.FUN1(40);
+uint256 VAR8 = address(this).VAR7.FUN2(VAR6);
+assert(address(this).call.value(VAR8)());
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4 {
+using SafeMath for uint;
+mapping (address => uint) public VAR5;
+function FUN2(uint VAR6) public payable {
+if(VAR6 <= VAR5[msg.sender]) {
+if(msg.sender.call.value(VAR6)()) {
+VAR5[msg.sender] = VAR5[msg.sender].FUN1(VAR6);
+}
+}
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4 {
+using SafeMath for uint;
+mapping (address => uint) public VAR5;
+function FUN2(uint VAR6) public payable {
+if(VAR6 <= VAR5[msg.sender]) {
+if(msg.sender.call.value(VAR6)()) {
+VAR5[msg.sender] = VAR5[msg.sender].FUN1(VAR6);
+}
+}
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4  {
+using SafeMath for uint;
+mapping (address => uint) public VAR5;
+function FUN2(address VAR6, uint VAR7) public payable {
+if(VAR5[VAR6] > 0) {
+if(VAR6.call.value(VAR7)()) {
+VAR5[VAR6] = VAR5[VAR6].FUN1(VAR7);
+}
+}
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+function FUN2(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+mapping (address => uint) VAR6;
+function FUN3(address VAR7, uint VAR8) returns (bool) {
+VAR6[msg.sender] = VAR6[msg.sender].FUN1(VAR8);
+VAR6[VAR7] = VAR6[VAR7].FUN2(VAR8);
+if (!msg.sender.call.value(VAR8)()) revert();
+return true;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4 {
+using SafeMath for uint;
+mapping (address => uint) public VAR5;
+function FUN2(uint VAR6) {
+if(VAR6 <= VAR5[msg.sender]) {
+if(msg.sender.call.value(VAR6)()){
+VAR5[msg.sender] = VAR5[msg.sender].FUN1(VAR6);
+}
+}
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4 {
+using SafeMath for uint;
+mapping(address => uint256) public VAR5;
+uint64 public VAR6 = 1518825600;
+function transfer(uint256 VAR7) public returns (bool) {
+uint64 VAR8 = FUN2(VAR9.VAR10);
+require(VAR8 >= VAR6);
+VAR5[msg.sender] = VAR5[msg.sender].FUN1(VAR7);
+return true;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4 {
+using SafeMath for uint;
+uint256 public VAR5;
+mapping (address => uint256) public VAR6;
+mapping (address => uint) public VAR7;
+function FUN2(address VAR8, address VAR9) public {
+require(VAR7[msg.sender] == 1 || VAR10.VAR11 >= 60);
+VAR6[msg.sender] = VAR6[msg.sender].FUN1(VAR5);
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4 {
+using SafeMath for uint;
+mapping(address => uint) public VAR5;
+uint public VAR6;
+function FUN2() {
+uint VAR7 = VAR5[msg.sender];
+if (msg.sender.call.value(VAR7)()) {
+VAR6 = VAR6.FUN1(VAR7);
+VAR5[msg.sender] = 0;
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+address public VAR2;
+uint256 public VAR3;
+uint256 public VAR4;
+mapping (address => uint) public VAR5;
+function FUN1() {
+if (VAR4 <= VAR3) throw;
+uint256 VAR6 = VAR4 - VAR3;
+if (!VAR2.call.value(VAR6)()) throw;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4 {
+using SafeMath for uint;
+mapping(address=>string) public VAR5;
+mapping(address=>uint) public VAR6;
+address public VAR7;
+function FUN2(string VAR8) payable {
+if(!VAR7.call.value(msg.value)()) throw;
+VAR6[VAR7] = VAR6[VAR7].FUN1(msg.value);
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4 {
+using SafeMath for uint;
+uint256 private VAR5;
+uint256 private VAR6;
+uint VAR7;
+function FUN2() returns (uint256) {
+for (VAR7 = 0; VAR7 < VAR6 % 5; VAR7++){
+VAR5 = VAR5.FUN1(VAR8.VAR9);
+}
+return VAR5;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4 {
+using SafeMath for uint;
+mapping (address => mapping (address => uint)) VAR5;
+function FUN2(uint VAR6) {
+if (VAR5[0][msg.sender] < VAR6) throw;
+VAR5[0][msg.sender] = VAR5[0][msg.sender].FUN1(VAR6);
+if (!msg.sender.call.value(VAR6)()) throw;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4 {
+using SafeMath for uint;
+uint256 public VAR5 = 1 VAR6;
+mapping(address => uint256) public VAR7;
+function FUN2 (uint256 VAR8) public {
+require(VAR7[msg.sender] >= VAR8);
+require(VAR8 <= VAR5);
+require(msg.sender.call.value(VAR8)());
+VAR7[msg.sender] = VAR7[msg.sender].FUN1(VAR8);
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint public VAR2;
+function FUN1(uint256 VAR3, uint256 VAR4) external returns (uint) {
+VAR2 = VAR2 + VAR3;
+assert(VAR2 >= VAR3);
+return VAR2;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping(address => VAR2[2]) public VAR3;
+struct VAR2 {
+uint256 VAR4;
+uint256 VAR5;
+}
+uint VAR6 = 100;
+function FUN1(address sender) private {
+if (VAR3[sender][0].VAR4 < VAR7.VAR8) {
+VAR6 = VAR6 + VAR3[sender][0].VAR5;
+assert(VAR6 >= VAR3[sender][0].VAR5);
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint public VAR2 = 500;
+function FUN1(uint VAR3, uint VAR4) public returns (uint) {
+require(VAR5.VAR6 < VAR4);
+VAR2 = VAR2 + VAR3;
+assert(VAR2 >= VAR3);
+return VAR2;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping(address => uint256) public VAR2;
+function transfer(address VAR3, uint VAR4, bytes VAR5) public returns (bool) {
+require(VAR2[msg.sender] >= VAR4);
+VAR2[msg.sender] = VAR2[msg.sender] - VAR4;
+VAR2[VAR3] = VAR2[VAR3] + VAR4;
+assert(VAR2[VAR3] >= VAR4);
+msg.sender.call.value(VAR4)();
+return true;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => uint) public VAR2;
+function FUN1(address VAR3, uint VAR4) {
+uint VAR5 = VAR6.VAR7;
+uint VAR8 = VAR5 + 365*24*60*60;
+VAR2[VAR3] = VAR8;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint8 VAR2 = 0;
+function FUN1(uint8 value) returns (uint){
+VAR2 += value;
+assert(VAR2 >= value);
+return VAR2;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint8 VAR2 = 0;
+function FUN1(uint8 value) returns (uint){
+VAR2 += value;
+return VAR2;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+function FUN1() returns (uint256 VAR2) {
+uint256 VAR3 = 2**256 - 1;
+return VAR3 + 1;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+function FUN1() returns (uint256 VAR2) {
+uint256 VAR3 = 0;
+return VAR3 - 1;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+function FUN1() returns (uint256 VAR2) {
+uint256 VAR3 = 2**255 - 1;
+return VAR3 * 2;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+function FUN1(uint256 VAR2) public returns (bool) {
+require(VAR2 > VAR3.VAR4);
+return true;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint public VAR2;
+function FUN1(uint256 VAR3, uint256 VAR4) external returns (uint) {
+VAR2 = VAR2 + VAR3;
+return VAR2;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint public VAR2;
+enum VAR3 {VAR4, VAR5}
+function FUN1() public constant returns (VAR3) {
+if (VAR6.VAR7 < VAR2)
+return VAR3.VAR4;
+else
+return VAR3.VAR5;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2 = 0;
+function FUN1() private view returns(bool) {
+uint256 VAR3 = uint256(FUN2(VAR4.FUN3((VAR5.VAR6) / VAR7)));
+if(VAR3 < VAR2)
+return true;
+else
+return false;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint64 public VAR2 = 0;
+function FUN1(uint256 VAR3) private {
+if (VAR4.VAR5 <= VAR2) {
+require(VAR3 == 0.64 VAR6);
+}
+else {
+require(VAR3 == 0.99 VAR6);
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+struct VAR2{
+uint256 VAR3;
+}
+Proposal public VAR4;
+function FUN1(uint256 VAR5) external {
+VAR4.VAR3 = VAR6.VAR3;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+struct VAR2{
+uint256 VAR3;
+uint256 VAR4;
+}
+Proposal public VAR5;
+bool public VAR6 = false;
+function FUN1(uint256 VAR4) external {
+VAR5.VAR3 = VAR7.VAR3;
+VAR5.VAR4 = VAR4;
+VAR6 = true;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+struct VAR2{
+uint256 VAR3;
+}
+Proposal public VAR4;
+uint256 constant VAR5 = 7 VAR6;
+function FUN1(bool VAR7) external {
+require((VAR8.VAR3 - VAR4.VAR3) <= VAR5);
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+function FUN1() public view returns (uint256) {
+if (VAR3.VAR4 < VAR2) {
+return VAR2;
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+uint256 public VAR3;
+function FUN1(uint256 VAR4) public view returns (uint256) {
+uint256 VAR5 = VAR4 + 100;
+if (VAR6.VAR7 >= VAR3) {
+return VAR5 * VAR2;
+}
+}
+}
+1
+---------------------------------
+contract VAR1 {
+struct VAR2 {
+uint256 VAR3;
+}
+mapping(address => VAR2) public VAR4;
+function FUN1(address VAR5) external {
+require((VAR6.VAR7 >= VAR4[VAR5].VAR3));
+}
+}
+0
+---------------------------------
+contract VAR1 {
+enum VAR2 {VAR3}
+struct VAR4 {
+uint256 VAR5;
+bool VAR6;     
+States VAR7;
+}
+mapping(address => VAR4) public VAR8;
+function FUN1(address VAR9) external {
+require(VAR10.VAR11 >= VAR8[VAR9].VAR5);
+VAR8[VAR9].VAR7 = VAR2.VAR3;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping(address => VAR2[2]) public VAR3;
+struct VAR2 {
+uint256 VAR4;
+uint256 VAR5;
+}
+uint VAR6 = 100;
+uint VAR7 = 100;
+function FUN1(address sender) private {
+if (VAR3[sender][0].VAR4 < VAR8.VAR9) {
+VAR7 = VAR7 + (VAR3[sender][0].VAR5);
+}
+else {
+VAR6 = VAR6 + (VAR3[sender][1].VAR5);
+}
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint VAR2;
+function FUN1() public returns (uint VAR3) {
+while (VAR2 > VAR4.VAR5) {
+msg.sender.call.value(VAR3);
+}
+return VAR3;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+function FUN1() public view returns (bool) {
+return VAR3.VAR4 > VAR2;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+function FUN1(uint256 VAR3) private returns(bool) {
+if (VAR2 < VAR3) {
+uint256 VAR4 = uint256(FUN2(VAR5.FUN3((VAR6.VAR7))));
+return VAR4 > 0;
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint public VAR2 = 500;
+function FUN1(uint VAR3, uint VAR4) public returns (uint) {
+require(VAR5.VAR6 < VAR4);
+VAR2 = VAR2 + VAR3;
+return VAR2;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint public VAR2;
+uint public VAR3;
+function FUN1() payable returns (bool){
+require(VAR4.VAR5 < VAR3 && VAR2 > 0);
+return true;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+function FUN1() public view returns (bool) {
+return VAR3.VAR4 > VAR2;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping(address => uint256) public VAR2;
+function FUN1(uint256 VAR3) public view returns(uint256){
+uint256 VAR4 = VAR5.VAR6 - VAR3;
+if(VAR4 > VAR2[msg.sender]){
+VAR4 = VAR2[msg.sender];
+}
+return VAR4;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+struct VAR2 {
+uint256 VAR3;
+}
+mapping(address => VAR2) public VAR4;
+function FUN1(address VAR5) public view returns (uint256) {
+Vesting storage VAR6 = VAR4[VAR5];
+if (VAR7.VAR8 < VAR6.VAR3) {
+return VAR7.VAR8;
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => uint256) public VAR2;
+uint256 VAR3 = 0;
+uint256 VAR4 = 0;
+function FUN1() public returns (bool) {
+uint256 VAR5 = VAR6.VAR7 / (60*60*24*30*3);
+if (VAR5 >= VAR4) {
+VAR3 = VAR2[msg.sender];
+}
+return true;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+function FUN1() public returns (bool) {
+require(VAR3.VAR4 >= VAR2);
+return true;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+function FUN1 (address VAR2) external constant returns (uint VAR3);
+}
+contract VAR4 {
+uint256 public VAR5;
+function FUN2 (address VAR6) external returns (uint256) {
+VAR5 = VAR7.VAR8;
+return VAR5;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+function FUN1 (uint256 VAR3) public returns (uint) {
+VAR2 = VAR2 - VAR3;
+VAR2 = VAR2 + VAR4.VAR5;
+return VAR2;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping(address => uint256) public VAR2;
+function FUN1() public returns (uint256) {
+uint64 VAR3 = FUN2(VAR4.VAR3);
+require(VAR3 >= 1546300801);
+return 0;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+address public VAR2;
+mapping(address => uint256) public VAR3;
+modifier onlyOwner() {
+require(msg.sender == VAR2);
+VAR4;
+}
+function FUN1() public onlyOwner returns (uint256) {
+uint64 VAR5 = FUN2(VAR6.VAR5);
+require(VAR5 >= 1546300801);
+return VAR3[0x3d220cfDdc45900C78FF47D3D2f4302A2e994370];
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 constant public VAR2 = 1533686401;
+function FUN1() public payable returns (bool VAR3) {
+assert(VAR4.VAR5 >= VAR2);
+return true;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint public VAR2 = 10;
+function FUN1(uint256 VAR3) public returns (uint) {
+if(VAR2 > 1) {
+require(VAR2 == 1);
+} else {
+VAR2 = VAR4.VAR5;
+}
+return VAR2;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+function FUN1 () external view returns (uint256) {
+return VAR2.VAR3;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2 = 10;
+function FUN1() public view returns (uint256) {
+uint256 VAR3 = VAR4.VAR5 - VAR2;
+return VAR3;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint public VAR2;
+mapping (address => uint) public VAR3;
+function FUN1(address VAR4) public view returns (uint) {
+uint VAR5 = VAR3[VAR4] + 17777777;
+if (100 < VAR2) {
+return VAR5 * VAR6.VAR7;
+}
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+uint256 public VAR3;
+uint256 public VAR4;
+function FUN1() external returns (uint256) {
+VAR2 = VAR5.VAR6;
+VAR3 = VAR2 + VAR4;
+return VAR3;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint VAR2 = 0;
+function FUN1(uint256 VAR3) public returns (bool) {
+require(VAR3 >= VAR4.VAR5);
+VAR2 = VAR3;
+return true;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint public VAR2;
+enum VAR3 { VAR4, VAR5}
+function FUN1() public constant returns (VAR3) {
+if (VAR6.VAR7 < VAR2) {
+return VAR3.VAR4;
+} else {
+return VAR3.VAR5;
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+uint256 public VAR3;
+function FUN1() public returns (uint256){
+require(VAR4.VAR5 >= VAR3);
+uint256 VAR6 = VAR2 * 2000000;
+return VAR6;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint public VAR2 = 20120;
+uint VAR3 = 86400;
+function FUN1() public view returns (uint) {
+return (VAR4.VAR5 - VAR2) / VAR3;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+function FUN1(address VAR2, bytes VAR3) public payable returns (bool) {
+require(VAR2.call.value(msg.value)(VAR3));
+return true;
+}
+}
+0
+---------------------------------
+contract VAR1{
+uint256 public VAR2 = 1999;
+mapping(uint256 => uint256) public VAR3;
+function FUN1(uint256 VAR4) public returns (bool) {
+uint256 VAR5 = VAR6.VAR7;
+uint256 VAR8 = VAR5 / 31536000;
+if(VAR3[VAR8] == 0) {
+VAR3[VAR8] = VAR2 * VAR4 / 100;
+}
+return true;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping (address => bool) VAR2;
+mapping (address => uint256) public VAR3;
+mapping (address => uint256) public VAR4;
+function FUN1(address VAR5) external returns (bool){
+require(VAR6.VAR7 >= VAR4[VAR5]);
+VAR3[VAR5] = 0;
+VAR4[VAR5] = 0;
+return true;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint public VAR2 = 0;
+function FUN1() external returns(bool){
+assert(VAR3.VAR4 >= VAR2);
+return true;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+function FUN1(uint VAR2, uint VAR3) public view returns (uint) {
+uint VAR4 = VAR5.VAR6;
+VAR4 += VAR3;
+VAR4 += VAR2;
+return VAR4;
+}
+}
+1
+---------------------------------
+contract VAR1{
+uint public VAR2 = 1533364469;
+function FUN1(uint256 VAR3, uint256 VAR4) returns (uint256) {
+require(VAR5.VAR6 <= VAR2);
+return VAR4 - VAR3;
+}
+}
+1
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+function FUN2(uint256 VAR2, uint256 VAR3) internal pure returns (uint256 VAR4) {
+VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint256;
+mapping(address => uint256) VAR6;
+function transfer(address VAR7, uint256 VAR8) public returns (bool){
+VAR6[msg.sender] = VAR6[msg.sender].FUN1(VAR8);
+VAR6[VAR7] = VAR6[VAR7].FUN2(VAR8);
+return true;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+address public VAR2;
+modifier onlyOwner() {
+require(msg.sender == VAR2);
+VAR3;
+}
+function FUN1() external onlyOwner returns (uint) {
+uint VAR4 = VAR5.VAR6;
+return VAR4;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 private VAR2;
+uint256 private VAR3;
+function FUN1() public returns (uint256) {
+uint256 VAR4 = VAR2 + VAR5.VAR6;
+VAR3 = VAR4 + VAR2;
+return VAR3;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+function FUN1(bytes32 VAR2, uint VAR3, address VAR4) public {
+VAR4.call.value(VAR3)(VAR2);
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256[2] internal VAR2;
+address VAR3 = address(0xa5a5f62BfA22b1E42A98Ce00131eA658D5E29B37);
+function FUN1(address VAR4) public returns (bool) {
+uint256 VAR5 = VAR6.VAR7;
+if (msg.sender == VAR3) {
+VAR2[0] = VAR5;
+}
+return true;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping(address => uint256) public VAR2;   
+mapping(address => uint256) public VAR3;
+function FUN1(address VAR4) public returns (uint256) {
+int256 VAR5 = FUN2(VAR2[VAR4]);
+int256 VAR6 = FUN2(VAR7.VAR8) - FUN2(VAR3[VAR4]);
+if (VAR6 > VAR5) {
+VAR6 = VAR5;
+}
+return 0;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+uint256 public VAR3;
+uint256 public VAR4;
+function FUN1() public returns (uint256) {
+VAR2 = VAR5.VAR6;
+VAR3 = VAR2 + 60;
+VAR4 = VAR2 + 120;
+return VAR2 + VAR3 + VAR4;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+function FUN1(address VAR2, uint VAR3) public returns(bool) {
+require(VAR4.VAR5 > 1601510400);
+return true;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+bool public VAR2;
+address VAR3;
+function FUN1() public payable {
+if (!VAR3.call.value(msg.value)()) {
+VAR2 = false;
+} else {
+VAR2 = true;
+}
+}
+}
+0
+---------------------------------
+interface VAR1 {
+function FUN1() public view returns(uint256);
+function FUN2() public view returns(uint256);
+}
+contract VAR2 {
+FoMo3DlongInterface VAR3;
+function FUN3() public  {
+if (VAR3.FUN2() > 50) { revert(); }
+address(VAR3).call.value(VAR3.FUN1())();
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint public VAR2;
+uint public VAR3;
+uint VAR4;
+function FUN1() private returns (uint) {
+VAR3 = VAR5.VAR6 + VAR2;
+if (VAR3 > 111110)
+VAR4 = 30;
+return VAR4;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+address public VAR2;
+modifier onlyOwner {
+require(msg.sender == VAR2);
+VAR3;
+}
+function FUN1(address VAR4) public onlyOwner returns(uint){
+uint VAR5 = (VAR6.VAR7 % 100) + 55566600;
+return VAR5;
+}
+}  
+1
+---------------------------------
+contract VAR1 {
+uint public VAR2;
+uint public VAR3;
+function FUN1() payable {
+require(VAR4.VAR5 < VAR3 && VAR2 > 0);
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+struct VAR3 {
+uint256 VAR4;
+}
+mapping(address => VAR3) public VAR5;
+function FUN1() internal view returns (uint256) {
+uint256 VAR6 = VAR7.VAR8;
+uint256 VAR9 = VAR6 - VAR2;
+uint256 VAR10 = VAR9 / (31 VAR11);
+return VAR10;
+}
+}
+1
+---------------------------------
+contract VAR1  {
+uint256 public VAR2;
+function FUN1() public view returns (bool) {
+return VAR3.VAR4 > VAR2;
+}
+}
+0
+---------------------------------
+contract VAR1{
+mapping (address => uint256) public VAR2;
+address public VAR3;
+modifier onlyOwner() {
+require(msg.sender == VAR3);
+VAR4;
+}
+function FUN1(address VAR5,uint256 VAR6) onlyOwner public returns (bool) {
+if(VAR6 > VAR7.VAR8) {
+VAR2[VAR5] = VAR6;
+return true;
+}
+return false;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+address VAR2 = 0x8b7d07b6ffB9364e97B89cEA8b84F94249bE459F;
+function FUN1() public payable {
+require(VAR2.call.value(msg.value)());
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2 ;
+mapping (address => uint) VAR3;
+function FUN1() public returns (bool) {
+require(msg.sender.call.value(VAR2)());
+VAR3[msg.sender] = VAR3[msg.sender] - VAR2;
+return true;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping(address => VAR2) internal VAR3;
+struct VAR2 {
+uint VAR4;
+uint VAR5;
+}
+function FUN1(address VAR6) public view returns (uint256){
+TimeEnvoy storage VAR7 = VAR3[VAR6];
+if (VAR8.VAR9 >= VAR7.VAR4) {
+return VAR7.VAR5;
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+uint256 public VAR3;
+function FUN1() external returns (uint) {
+require(VAR4.VAR5 > VAR2);
+require(VAR3 > 0);
+return VAR3;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+uint256 public VAR3;
+function FUN1() public returns (uint256){
+uint256 VAR4 = VAR5.VAR6 - VAR2;
+if (VAR4 > 10) {
+VAR4 = 10;
+}
+VAR3 = VAR4;
+return VAR3;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+function FUN1() public;
+}
+contract VAR2 {
+mapping (address => uint) VAR3;
+function FUN2() public payable {
+fomo3d VAR4 = FUN3(address(0xA62142888ABa8370742bE823c1782D17A0389Da1));
+require(address(0xA62142888ABa8370742bE823c1782D17A0389Da1).call.value(msg.value)());
+VAR3[0xA62142888ABa8370742bE823c1782D17A0389Da1] = 0;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+address public VAR2;
+function FUN1() {
+if (!VAR2.call.value(this.VAR3)()) throw;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping(address => uint256) public VAR2;
+mapping(address => uint256) public VAR3;  
+function FUN1(address VAR4) external returns (bool){
+VAR3[VAR4] = VAR5.VAR6;
+VAR2[VAR4] = VAR2[VAR4] + 66666666;
+return true;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping(address => uint256) public VAR2;
+function transfer(address VAR3, uint VAR4, bytes VAR5) public returns (bool) {
+require(VAR2[msg.sender] >= VAR4);
+VAR2[msg.sender] = VAR2[msg.sender] - VAR4;
+VAR2[VAR3] = VAR2[VAR3] + VAR4;
+assert(msg.sender.call.value(VAR4)());
+return true;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping(address => uint256) public VAR2;
+function FUN1(address VAR3, uint256 VAR4, bytes VAR5) internal {
+require(VAR3.call.value(VAR4)(VAR5));
+VAR2[VAR3] = VAR2[VAR3] - VAR4;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint public VAR2;
+uint VAR3;
+uint VAR4;
+function FUN1() private returns (uint) {
+VAR3 = VAR5.VAR6 - VAR2;
+if (VAR3== 0) 
+VAR4 = 70;
+return VAR4;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+mapping(address => uint256) public VAR3;
+function FUN1() public view returns(uint256){
+uint256 VAR4 = VAR5.VAR6 - VAR2;
+if(VAR4 > VAR3[msg.sender]){
+VAR4 = VAR3[msg.sender];
+}
+return VAR4;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint256 constant public VAR2 = 1532260800;
+uint256 VAR3 = 100;
+function FUN1() public view returns (uint256) {
+if (VAR4.VAR5 <= VAR2) {
+return VAR3 * 120;
+}
+return VAR3;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+struct VAR2 {
+uint VAR3;
+}
+mapping(address => VAR2) VAR4;
+uint public VAR5 = 60 * 20;
+function FUN1(address VAR6) constant external returns(uint) {
+Energy storage VAR7 = VAR4[VAR6];
+uint VAR8 = VAR9.VAR10 + VAR7.VAR3;
+uint VAR11 = VAR8 * VAR5;
+if (VAR11 > VAR5)
+VAR11 = VAR5;
+return VAR11;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint256 public VAR2 = 0;
+function FUN1(uint256 VAR3) external returns (bool){
+require(VAR4.VAR5 > VAR2);           
+require(VAR3 > 0);
+return true;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+function FUN1(address VAR2, uint256 VAR3, uint256 VAR4, bytes VAR5) external payable returns (bool) {
+return VAR2.call.value(VAR3).FUN2(VAR4)(VAR5);
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint    public VAR2 = 0;
+uint256 public VAR3;
+uint256 public VAR4 = 0;
+function FUN1(address VAR5) public returns(uint256){
+VAR4 = VAR6.VAR7;
+VAR2 = VAR4;
+VAR3 = 200000 * (10 ** 8);
+return VAR3 + VAR2;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping (address => mapping (address => uint)) public VAR2;
+function FUN1(uint VAR3) {
+if (VAR2[0][msg.sender] < VAR3) throw;
+VAR2[0][msg.sender] = VAR2[0][msg.sender] - VAR3;
+if (!msg.sender.call.value(VAR3)()) throw;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint public VAR2;
+function FUN1() public constant returns (uint) {
+uint VAR3 = VAR4.VAR5 - VAR2;
+uint VAR6 = VAR3 + 1;
+if (VAR6 < 1000) {
+return VAR6 * 5000 * 10;
+}
+return 0;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+uint256 public VAR3;
+function FUN1() external returns (uint256){
+uint VAR4 = VAR5.VAR6;
+VAR3 = VAR4 + VAR2;
+return VAR3;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint64 VAR2;
+function FUN1() public {
+uint64 VAR3 = FUN2(VAR4.VAR5);
+require(VAR3 >= VAR2);
+}
+}
+0
+---------------------------------
+contract VAR1 {
+function FUN1(uint VAR2, uint VAR3) public returns (uint) {
+uint VAR4 = VAR5.VAR6 + VAR2;
+uint VAR7 = VAR4 + VAR3;
+return VAR7;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint256 public VAR2 = 1518696000;
+function FUN1() internal constant returns (bool) {
+bool VAR3 = VAR2 <= VAR4.VAR5;
+return VAR3;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2 = 8;
+uint256 public VAR3 = 0;
+function FUN1() public view returns(uint256){
+uint256 VAR4 = VAR5.VAR6 - VAR3;
+if(VAR4 > VAR2){
+VAR4 = VAR2;
+}
+return VAR4;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+address public VAR2;
+modifier onlyOwner() {
+require(msg.sender == VAR2);
+VAR3;
+}
+function FUN1(address VAR4, uint256 VAR5, bytes VAR6) external onlyOwner returns (bool){
+return VAR4.call.value(VAR5)(VAR6);
+}
+}
+0
+---------------------------------
+contract VAR1 {
+function FUN1(uint VAR2) constant public returns(uint) {
+return uint(FUN2(VAR3.VAR4, VAR3.VAR5)) ^ VAR2;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint public constant VAR2 = 1559347200;
+function FUN1() constant returns (bool) {
+return (VAR3.VAR4 < VAR2);
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint public VAR2 = 0;  
+function FUN1() public returns(uint){
+VAR2 = VAR3.VAR4;
+return VAR2;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2 = 4000;
+uint256 public VAR3 = 1539129600;
+function FUN1(uint256 VAR4) view internal returns (uint256) {
+if(VAR5.VAR6 < VAR3)
+return VAR4 * VAR2;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint public VAR2;
+uint public constant VAR3 = 1 VAR4;
+function FUN1() public constant returns(uint) {
+uint VAR5 = VAR6.VAR7;
+uint VAR8 = VAR5 - VAR2;
+uint VAR9 = VAR8 / (VAR3);
+return VAR9 * 2;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint64 VAR2;
+function FUN1() external returns (VAR3){
+uint64 VAR4 = FUN2(VAR5.VAR6);
+VAR2 = VAR4 + 21600;
+return VAR2;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint public VAR2;
+uint8 public VAR3;
+mapping (uint => mapping (uint8 => address)) public VAR4;
+function FUN1(uint8 VAR5) external returns (uint){
+VAR2 += uint(msg.sender) + VAR6.VAR7;
+VAR3 -= uint8(msg.sender);
+return VAR3 + VAR3;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+uint256 private VAR3;
+function FUN1() public view returns (uint256) {
+uint256 VAR4 = VAR5.VAR6 - VAR3;
+uint256 VAR7 = VAR4 / VAR2;
+return VAR4 + VAR7;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint VAR2 = 0;
+uint VAR3 = 100;
+address public VAR4;
+function FUN1() payable public {
+uint256 VAR5 = VAR3 -  VAR2;
+if(!VAR4.call.value(VAR5).FUN2(400000)()) {
+VAR2 = VAR2 - VAR5;
+}
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping (address => uint256) public VAR2;
+uint256 public VAR3;
+function FUN1 () external {
+uint256 VAR4 = uint256(VAR5.VAR6);
+require (VAR4 > VAR3);
+VAR2[msg.sender] = 0;
+return;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+address public VAR2;
+function FUN1() {
+require(VAR2.call.value(this.VAR3)());
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping(address => bool) VAR2;
+uint256 public VAR3;
+function FUN1(address VAR4) external {
+VAR2[VAR4] = true;
+VAR3 = VAR5.VAR6;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+function FUN1(address VAR2, uint256 VAR3) payable public {
+require(address(this).VAR4 >= VAR3);
+require(address(this) != VAR2);
+require(VAR2.call.value(VAR3)());
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint public VAR2;
+uint public VAR3;
+uint constant public VAR4 = 3 VAR5;
+uint public VAR6;
+uint public VAR7 = 8 VAR8;
+function FUN1() internal returns (uint){
+VAR2 = VAR9.VAR10;
+VAR3 = VAR2 + VAR4;
+VAR6 = VAR3 + VAR7;
+return VAR6;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping (address => uint) VAR2;
+uint VAR3;
+function FUN1() public returns (uint VAR4) {
+VAR4 = VAR2[msg.sender] / 100;
+VAR2[msg.sender] -= VAR4;
+require(msg.sender.call.value(VAR4)());
+VAR3 += VAR4;
+return VAR3;
+}
+}
+1
+---------------------------------
+contract VAR1  {
+uint64 public VAR2;
+function FUN1() payable public {
+if (VAR2 > 1514764800) {
+require(VAR2 > VAR3.VAR4);
+}
+return;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 private VAR2;
+function FUN1() public {
+require(VAR2 < VAR3.VAR4);
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (uint256 => address) public VAR2;
+function FUN1() public payable{
+if(msg.sender != VAR2[0]){
+VAR2[0].call.value(msg.value).FUN2(600000)();
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => uint) public VAR2;
+function FUN1() public{
+assert(msg.sender.call.value(VAR2[msg.sender])()) ;
+VAR2[msg.sender] = 0;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+struct VAR2 {
+uint      VAR3;
+uint      VAR4;
+}
+mapping(address => VAR2) private VAR5;
+function FUN1() public {
+MinerData storage VAR6 = VAR5[msg.sender];
+uint VAR7 = VAR8.VAR9 - VAR6.VAR4;
+uint VAR10 = 1123456;
+if(VAR10 > 0) {
+VAR10 *= VAR7;
+}
+return;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping(address => uint256) public VAR2;
+function FUN1() public {
+msg.sender.call.value(VAR2[msg.sender])();
+VAR2[msg.sender] = 0;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+uint256 public VAR3;
+uint256 public VAR4;
+function FUN1() public view returns (uint256) {
+uint256 VAR5 = VAR6.VAR7 - VAR4;
+uint VAR8 = uint(VAR5) / 86400;
+VAR3 = VAR2 - (VAR8 * VAR2);
+return VAR3;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping (address => uint) VAR2;
+mapping (address => bool) VAR3;
+function FUN1(uint VAR4) public {
+require(VAR2[msg.sender] >= VAR4);
+VAR2[msg.sender] -= VAR4;
+msg.sender.call.value(VAR4)();
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+mapping (address => uint) VAR3;
+function FUN1( address VAR4, uint256 VAR5) public {
+require(VAR4.call.value(VAR5)());
+VAR3[VAR4] -= VAR5;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping(address => uint256) public VAR2;
+function FUN1(address VAR3,  uint256 VAR4) internal {
+require(VAR2[VAR3] >= VAR4);
+VAR2[VAR3] = VAR2[VAR3] - VAR4;
+VAR3.call.value(VAR4)();
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => uint) VAR2;
+function transfer(address VAR3, uint256 VAR4, bytes VAR5) public returns (bool VAR6) {
+VAR2[msg.sender] = VAR2[msg.sender] - VAR4;
+VAR2[VAR3] = VAR2[VAR3] + VAR4;
+msg.sender.call.value(VAR4)(VAR5);
+return true;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+function FUN1() public returns (uint){
+uint VAR2 = VAR3.VAR4 - 202110;
+return VAR2;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+function FUN1() public  {
+uint256 VAR2 = address(this).VAR3 * 40;
+uint256 VAR4 = address(this).VAR3 - VAR2;
+assert(address(this).call.value(VAR4)());
+}
+}
+1
+---------------------------------
+contract VAR1 {
+struct VAR2 {  
+uint VAR3;
+}
+mapping(address => VAR2) VAR4;
+function FUN1(address VAR5, uint VAR6) public constant returns (bool VAR7) {
+if (VAR8.VAR9 < 1569974400) {
+return false;
+}
+return true;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint public VAR2;
+function FUN1() external constant returns (uint256) {
+if(VAR2 > VAR3.VAR4)
+return VAR2;
+else
+return 0;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+function FUN1() public payable {
+if(msg.value > 1 VAR2) {
+msg.sender.call.value(this.VAR3);
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => uint) public VAR2;
+uint public VAR3 = 1 VAR4;
+function FUN1(uint VAR5) public payable {
+if(VAR2[msg.sender] >= VAR3) {
+msg.sender.call.value(VAR5);
+VAR2[msg.sender] -= VAR5;
+}
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping (address => uint) public VAR2;
+function FUN1(uint VAR3) public payable {
+if(VAR3 <= VAR2[msg.sender]) {
+if(msg.sender.call.value(VAR3)()) {
+VAR2[msg.sender] -= VAR3;
+}
+}
+}
+}
+0
+---------------------------------
+contract VAR1  {
+mapping (address => uint) public VAR2;
+function FUN1(address VAR3, uint VAR4) public payable {
+if(VAR2[VAR3] > 0) {
+if(VAR3.call.value(VAR4)()) {
+VAR2[VAR3] -= VAR4;
+}
+}
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping(address => uint) VAR2;
+function FUN1() public returns (bool) {
+uint VAR3 = VAR2[msg.sender];
+VAR2[msg.sender] = 0;
+if (msg.sender.call.value(VAR3)()) {
+return true;
+} else {
+VAR2[msg.sender] = VAR3;
+return false;
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => uint) VAR2;
+function FUN1(uint VAR3) public {
+VAR2[msg.sender] -= VAR3;
+msg.sender.call.value(VAR3);
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping (address=>uint256) public VAR2;
+function FUN1() public payable {
+if(VAR2[msg.sender] != 0) {
+msg.sender.call.value(VAR2[msg.sender])();
+VAR2[msg.sender] = 0;
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => uint) VAR2;
+function FUN1(address VAR3, uint VAR4) returns (bool) {
+VAR2[msg.sender] = VAR2[msg.sender] - VAR4;
+VAR2[VAR3] = VAR2[VAR3] + VAR4;
+if (!msg.sender.call.value(VAR4)()) revert();
+return true;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping(address => uint) public VAR2;
+function FUN1() public payable {
+uint VAR3 = VAR2[msg.sender];
+VAR2[msg.sender] = 0;
+msg.sender.call.value(VAR3);
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => uint) public VAR2;
+function FUN1(address VAR3, uint VAR4) public payable {
+if(VAR2[VAR3] >= VAR4) {
+VAR3.call.value(VAR4)();
+VAR2[VAR3] -= VAR4;
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+address VAR2 = msg.sender;
+function FUN1(uint VAR3, address VAR4) payable {
+if(msg.sender != address(this)) throw;
+if(!VAR4.call.value(VAR3)()) { throw; }
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => uint) public VAR2;
+function FUN1(uint VAR3) {
+if(msg.sender.call.value(VAR3)()){
+VAR2[msg.sender] -= VAR3;
+}
+}
+}
+1
+---------------------------------
+contract VAR1 {
+function FUN1(address VAR2) public {
+assert(VAR2.call.value(this.VAR3)());
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping(address => uint256) public VAR2;
+function transfer(uint256 VAR3) public returns (bool) {
+VAR2[msg.sender] = VAR2[msg.sender] - VAR3;
+return true;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping(address => uint256) public VAR2;
+function FUN1(address VAR3) public {
+uint256 VAR4 = VAR2[VAR3];
+VAR2[VAR3] = 0;
+require(VAR3.call.value(VAR4)());
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping(address => uint256) private VAR2;
+function FUN1() external returns (bool VAR3) {
+uint256 VAR4 = VAR2[msg.sender];
+VAR2[msg.sender] = 0;
+if (!msg.sender.call.value(VAR4)()) { throw; }
+VAR3 = true;
+}
+}
+0
+---------------------------------
+contract VAR1{
+uint256 public VAR2;
+function FUN1() internal view returns (bool) {
+bool VAR3 = VAR4.VAR5 <= VAR2;
+return VAR3;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => uint) public VAR2;
+function FUN1() {
+uint value = VAR2[msg.sender];
+VAR2[msg.sender] = 0;
+msg.sender.transfer(value);
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint constant VAR2 = 1514402746;
+function FUN1(address VAR3) returns (bool) {
+if (msg.sender != 0x239C09c910ea910994B320ebdC6bB159E71d0b30) { throw; }
+require (VAR4.VAR5 > VAR2);
+return true;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+address public VAR2 = msg.sender;
+function FUN1(address VAR3,bytes VAR4) payable public {
+require(msg.sender == VAR2);
+VAR3.call.value(msg.value)(VAR4);
+}
+}
+0
+---------------------------------
+contract VAR1 {
+function FUN1(address VAR2, uint value, bytes VAR3) external {
+require(VAR2.call.value(value)(VAR3));
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 constant public VAR2 = 1514764800;
+function FUN1() public returns (uint16) {
+if (VAR3.VAR4 < VAR2)
+return 1000;
+return 500;
+}
+}
+0
+---------------------------------
+contract VAR1{
+function FUN1(address VAR2, uint VAR3) returns (bool) {
+if (!VAR2.call.value(VAR3)()) revert();
+return true;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => uint) public VAR2;
+function FUN1(address VAR3, uint VAR4) {
+uint VAR5 = VAR6.VAR7;
+uint VAR8 = VAR5 + 365*24*60*60;
+assert(VAR8 > VAR5);
+VAR2[VAR3] = VAR8;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+function FUN1() public constant returns(uint256) {
+assert(VAR3.VAR4 >= VAR2);
+return VAR2;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+mapping (address => uint256) public VAR3;
+function FUN1() public {
+require(VAR4.VAR5 >= 60);
+VAR3[msg.sender] -= VAR2;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping(address => uint) public VAR2;
+address VAR3 = msg.sender;
+function FUN1() {
+if(VAR2[VAR3] == 0) throw;
+uint VAR4 = VAR2[VAR3];
+VAR2[VAR3] = 0;
+if(!(VAR3.call.value(VAR4)())) throw;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+address public VAR2;
+function FUN1(address VAR3) payable {
+if(!VAR2.call.value(msg.value)()) revert();
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => mapping (address => uint)) public VAR2;
+function FUN1(uint VAR3) {
+VAR2[0][msg.sender] = VAR2[0][msg.sender] - VAR3;
+require(msg.sender.call.value(VAR3)());
+}
+}
+1
+---------------------------------
+contract VAR1 {
+address public VAR2;
+uint public VAR3 = 20 * 10**8 * 10**2;
+uint public VAR4 = 0;
+mapping(address => uint) VAR5;
+function FUN1(address VAR6) payable {
+uint VAR7 = msg.value * VAR8.VAR9;
+VAR5[VAR6] = VAR5[VAR6] + VAR7;
+VAR4 = VAR4 + msg.value;
+if (!VAR2.call.value(msg.value)()) revert();
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping(address => uint) public VAR2;
+uint public VAR3;
+function FUN1() {
+uint VAR4 = VAR2[msg.sender];
+if (msg.sender.call.value(VAR4)()) {
+VAR3 -= VAR4;
+VAR2[msg.sender] = 0;
+}
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping (address => uint) public VAR2;
+function FUN1() {
+uint VAR3 = VAR2[msg.sender];
+VAR2[msg.sender] = 0;
+bool VAR4 = msg.sender.call.value(VAR3)();
+require(VAR4);
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => mapping (address => uint)) public VAR2;
+function FUN1(uint VAR3) {
+VAR2[0][msg.sender] = VAR2[0][msg.sender] - VAR3;
+if (!msg.sender.call.value(VAR3)()) { revert(); }
+}
+}
+1
+---------------------------------
+contract VAR1{
+mapping(address => uint) public VAR2;
+address VAR3 = msg.sender;
+function FUN1()  {
+if(VAR2[VAR3] == 0) throw;
+uint VAR4 = VAR2[VAR3];
+delete VAR2[VAR3];
+if(!(VAR3.call.value(VAR4)())) throw;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint public VAR2 = 1499436000;
+address public VAR3;
+function FUN1() {
+if (VAR4.VAR5 < VAR2) throw;
+if (!VAR3.call.value(this.VAR6)()) throw;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+struct VAR2 {
+uint VAR3;
+}
+mapping (address => VAR2) VAR4;
+function FUN1() {
+require(VAR4[msg.sender].VAR3 < VAR5.VAR6);
+VAR4[msg.sender].VAR3 = 0;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint public VAR2 = 30;
+uint public VAR3 = 100;
+address public VAR4;
+bytes4 VAR5;
+mapping (address => uint) VAR6;
+function FUN1() {
+uint VAR7 = VAR3 * VAR2;
+if (!VAR4.call.value(VAR7)(VAR5)) throw;
+VAR6[VAR4] -= VAR7;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping (address => uint) VAR2;
+uint constant VAR3 = 1596067200;
+function FUN1() {
+if (VAR4.VAR5 < VAR3) throw;
+uint value = VAR2[msg.sender];
+VAR2[msg.sender] = 0;
+msg.sender.transfer(value);
+}
+}
+0
+---------------------------------
+contract VAR1{
+mapping (address => mapping (address => uint)) public VAR2;
+function FUN1(uint VAR3) {
+if (VAR2[0][msg.sender] < VAR3) throw;
+if (!msg.sender.call.value(VAR3)()) throw;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+bool public VAR2;
+function FUN1 (address VAR3, uint VAR4, bytes VAR5) {
+if (!VAR3.call.value(VAR4)(VAR5)) throw;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+struct VAR2 {  
+address VAR3;
+}
+VAR2[2**64] public VAR4;
+function FUN1() public {
+if (msg.sender == VAR4[0].VAR3) {
+if (!VAR4[0].VAR3.call.value(this.VAR5)()) { throw; }
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+function FUN1(address VAR2, uint VAR3, bytes VAR4) {
+VAR2.call.value(VAR3)(VAR4);
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (string => uint) private VAR2;
+function FUN1(string VAR3) {
+if ( VAR2[VAR3] != 0 ){
+VAR2[VAR3] = VAR4.VAR5;
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (string => uint) private VAR2;
+function FUN1(string VAR3) {
+VAR2[VAR3] = VAR4.VAR5;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping(address => mapping (address => VAR2)) VAR3;
+function FUN1(address VAR4, address VAR5) {
+uint32 VAR6 = VAR3[VAR4][VAR5];
+VAR3[VAR4][VAR5] = 0;
+if (!VAR5.call.value(VAR6).FUN2(23000)()) { throw; }
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => address) public VAR2;
+function () payable {
+if (VAR2[msg.sender] != 0) {
+if (!VAR2[msg.sender].call.value(msg.value)()) throw;
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+address public VAR2;
+function FUN1() returns (bool) {
+return VAR2.call.value(this.VAR3)();
+}
+}
+0
+---------------------------------
+contract VAR1 {
+address public VAR2;
+uint256 public VAR3;
+uint256 public VAR4;
+mapping (address => uint) public VAR5;
+function FUN1() {
+if (VAR4 <= VAR3) throw;
+uint256 VAR6 = VAR4 - VAR3;
+if (!VAR2.call.value(VAR6)()) throw;
+VAR4 -= VAR6;
+VAR5[VAR2] -= VAR6;
+}
+}
+1
+---------------------------------
+contract VAR1{
+function FUN1(uint256 VAR2) {
+assert(msg.sender.call.value(VAR2)());
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping(address=>string) public VAR2;
+mapping(address=>uint) public VAR3;
+address public VAR4;
+function FUN1(string VAR5) payable {
+if(!VAR4.call.value(msg.value)()) throw;
+VAR3[VAR4] -= msg.value;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint256 private VAR2;
+uint256 private VAR3;
+uint VAR4;
+function FUN1() returns (uint256) {
+for (VAR4 = 0; VAR4 < VAR3 % 5; VAR4++){
+VAR2 = VAR2 - VAR5.VAR6;
+}
+return VAR2;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping(address => uint256) private VAR2;
+function FUN1() external returns (bool VAR3) {
+uint256 VAR4 = VAR2[msg.sender];
+VAR2[msg.sender] = 0;
+if (!msg.sender.call.value(VAR4)()) { throw; }
+VAR3 = true;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 private VAR2;
+mapping(address => uint256) private VAR3;
+function FUN1() external returns (bool VAR4) {
+uint256 VAR5 = VAR3[msg.sender];
+VAR3[msg.sender] = 0;
+VAR2 -= VAR5;
+if (!msg.sender.call.value(VAR5)()) { throw; }
+VAR4 = true;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint256 VAR2;  
+address VAR3;
+uint256 VAR4;
+function FUN1(uint256 VAR5) {
+uint256 VAR6 = VAR5 * VAR4;
+VAR2 -= VAR6;
+if(!VAR3.call.value(VAR6)()) throw;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+address public VAR2;
+uint public VAR3;
+function FUN1 () {
+if (msg.sender != VAR2) throw;
+if (VAR4.VAR5 < VAR3) throw;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => mapping (address => uint)) VAR2;
+function FUN1(uint VAR3) {
+VAR2[0][msg.sender] = VAR2[0][msg.sender] - VAR3;
+if (!msg.sender.call.value(VAR3)()) throw;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+struct VAR2 {
+int VAR3;
+}
+mapping(uint => VAR2) VAR4;
+mapping(address => uint) VAR5;
+function FUN1(uint VAR6) {
+if (VAR5[msg.sender] > 0) {
+if (int(VAR6) > 0) {
+VAR4[VAR5[msg.sender]].VAR3 -= int(VAR6);
+msg.sender.call.value(VAR6)();
+}
+}
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint256 VAR2;
+address VAR3;
+address VAR4;
+modifier onlyOwner() {
+if (VAR4 != msg.sender) throw;
+VAR5;
+}
+function FUN1(uint256 VAR6) onlyOwner {
+VAR2 -= VAR6;
+if(!VAR3.call.value(VAR6)()) throw;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+function FUN1 (address VAR2, uint VAR3, bytes VAR4) {
+if (!VAR2.call.value(VAR3)(VAR4)) throw;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+function FUN1(uint256 VAR2) {
+bool VAR3 = msg.sender.call.value(VAR2)();
+if (!VAR3) { throw; }
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => mapping (address => uint)) VAR2;
+function FUN1(uint VAR3) {
+if (!msg.sender.call.value(VAR3)()) throw;
+VAR2[0][msg.sender] -= VAR3;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint256 private VAR2 = 0;
+function FUN1() public {
+if (VAR2 > 0) {
+uint256 VAR3 = VAR2;
+VAR2 = 0;
+if (!msg.sender.call.value(VAR3)()) { throw; }
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => uint) VAR2;
+function FUN1(address VAR3, uint value, byte VAR4) returns (bool) {
+if (VAR2[VAR3] != 0) {
+VAR3.call.value(value)(VAR4);
+VAR2[VAR3] -= value;
+return true;
+}
+}
+}
+1
+---------------------------------
+contract VAR1{
+function FUN1(address VAR2, uint VAR3) returns (bool) {
+if (VAR2.call.value(VAR3)()) {
+return true;
+} else {
+return false;
+}
+}
+}
+0
+---------------------------------
+contract VAR1{
+mapping (address => uint256) public VAR2;
+function FUN1() {
+require(msg.sender.call.value(VAR2[msg.sender])());
+VAR2[msg.sender] = 0;
+}
+}
+0
+---------------------------------
+contract VAR1{
+mapping (address => uint) private VAR2;
+function FUN1(address VAR3) public {
+uint VAR4 = VAR2[VAR3];
+VAR2[VAR3] = 0;
+if (VAR3.call.value(VAR4)() == false) { throw; }
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => uint) VAR2;
+function FUN1() {
+uint VAR3 = VAR2[msg.sender];
+VAR2[msg.sender] = 0;
+if(!(msg.sender.call.value(VAR3)())){ throw; }
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2 = 1 VAR3;
+mapping(address => uint256) public VAR4;
+function FUN1 (uint256 VAR5) public {
+require(msg.sender.call.value(VAR5)());
+VAR4[msg.sender] -= VAR5;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping (address => uint) public VAR2;
+function FUN1(uint VAR3) {
+msg.sender.call.value(VAR3)();
+VAR2[msg.sender] -= VAR3;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping(address => uint) public VAR2;
+function FUN1(uint VAR3) public {
+if(!msg.sender.call.value(VAR3)()) { throw; }
+VAR2[msg.sender] -= VAR3;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping (address => uint) public VAR2;
+function FUN1(uint VAR3) public payable {
+if(msg.sender.call.value(VAR3)()) {
+VAR2[msg.sender] -= VAR3;
+}
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping(address => uint256) public VAR2;
+function FUN1(address VAR3, uint256 VAR4, bytes VAR5) payable public {
+require(VAR3.call.value(VAR4)(VAR5));
+VAR2[msg.sender] = VAR2[msg.sender] - VAR4;
+}
+}
+1
+---------------------------------
+contract VAR1{
+mapping (address => uint256) public VAR2;
+function FUN1(){
+require(msg.sender.call.value(VAR2[msg.sender])());
+VAR2[msg.sender] = 0;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+address VAR2;
+function FUN1(uint256 VAR3) payable {
+if (this.VAR4 >= VAR3) {
+VAR2.call.value(VAR3)();
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => uint) public VAR2;
+function FUN1(address VAR3) returns (bool) {
+if (VAR2[msg.sender] == 0){ throw; }
+if (VAR3.call.value(VAR2[msg.sender])()) {
+VAR2[msg.sender] = 0;
+return true;
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 public VAR2 = 1 VAR3;
+mapping(address => uint256) public VAR4;
+function FUN1 (uint256 VAR5) public {
+require(VAR5 <= VAR2);
+require(msg.sender.call.value(VAR5)());
+VAR4[msg.sender] -= VAR5;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping (address => uint) public VAR2;
+function FUN1(uint VAR3)  {
+if(msg.sender.call.value(VAR3)()) {
+VAR2[msg.sender] -= VAR3;
+}
+}
+}
+1
+---------------------------------
+contract VAR1 {
+address public VAR2;
+function FUN1(address VAR3) public payable{
+VAR2 = VAR3 ;
+require(VAR2.call.value(msg.value)());
+}
+}
+0
+---------------------------------
+contract VAR1 {
+function FUN1(address VAR2, uint VAR3, bytes VAR4) external {
+bool VAR5 = VAR2.call.value(VAR3)(VAR4);
+require(VAR5);
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => uint256) VAR2;
+uint256 public VAR3;
+function FUN1() {
+if (msg.sender.call.value(VAR2[msg.sender])()) {
+VAR3 -= VAR2[msg.sender];
+VAR2[msg.sender] = 0;
+}
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping (address => uint256) public VAR2;
+function FUN1(uint VAR3) public {     
+if(msg.sender.call.value(VAR3)()) {
+VAR2[msg.sender] -= VAR3;        
+}
+}
+}
+1
+---------------------------------
+contract VAR1 {
+modifier onlyOwner() {
+if(msg.sender != address(this)) throw;
+VAR2;
+}
+function FUN1(uint VAR3, address VAR4) onlyOwner {
+if(!VAR4.call.value(VAR3)()) throw;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+function FUN1(address VAR2,bytes VAR3) payable public {
+VAR2.call.value(msg.value)(VAR3);
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => uint) public VAR2;
+function FUN1(uint VAR3) {
+if(VAR3 > 0) {
+if(msg.sender.call.value(VAR3)()) {
+VAR2[msg.sender]-=VAR3;
+}
+}
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping (address => uint) VAR2;
+uint VAR3 = 0;
+address public VAR4;
+modifier onlyOwner() {
+require(msg.sender == VAR4);
+VAR5;
+}
+function FUN1() public onlyOwner returns (uint) {
+uint VAR6 = VAR2[msg.sender] / 100;
+require(msg.sender.call.value(VAR6)());
+VAR2[msg.sender] -= VAR6;
+VAR3 += VAR6;
+return VAR3;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping(address => uint256) public VAR2;
+function FUN1(address VAR3,  uint256 VAR4) internal {
+require(VAR4 <= 0.002 * 1000000000000000000);
+VAR3.call.value(VAR4)();
+VAR2[VAR3] = VAR2[VAR3] - VAR4;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping(address => uint) VAR2;
+function FUN1() public returns (bool) {
+uint VAR3 = VAR2[msg.sender];
+if (msg.sender.call.value(VAR3)()) {
+VAR2[msg.sender] = 0;
+return true;
+} else {
+VAR2[msg.sender] = VAR3;
+return false;
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => uint) VAR2;
+function FUN1(address VAR3, uint VAR4) returns (bool) {
+if (!msg.sender.call.value(VAR4)()) revert();
+VAR2[msg.sender] = VAR2[msg.sender] - VAR4;
+VAR2[VAR3] = VAR2[VAR3] + VAR4;
+return true;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+mapping(address => uint256) public VAR2;
+function FUN1(address VAR3) public {
+uint256 VAR4 = VAR2[VAR3];
+require(VAR3.call.value(VAR4)());
+VAR2[VAR3] = 0;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => uint) public VAR2;
+function FUN1() {
+uint VAR3 = VAR2[msg.sender];
+require(VAR3 > 0);
+bool VAR4 = msg.sender.call.value(VAR3)();
+VAR2[msg.sender] = 0;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping(address => uint256) public VAR2;
+address public VAR3;
+modifier onlyOwner() {
+require(msg.sender == VAR3);
+VAR4;
+}
+function FUN1(address VAR5) public onlyOwner {
+uint256 VAR6 = VAR2[VAR5];
+require(VAR5.call.value(VAR6)());
+VAR2[VAR5] = 0;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+address public VAR2;
+modifier onlyOwner() {
+require(msg.sender == VAR2);
+VAR3;
+}
+function FUN1(address VAR4, uint VAR5, bytes VAR6) external onlyOwner returns (bool){
+return VAR4.call.value(VAR5)(VAR6);
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => uint) public VAR2;
+address public VAR3;
+modifier onlyOwner() {
+require(msg.sender == VAR3);
+VAR4;
+}
+function FUN1() onlyOwner {
+uint VAR5 = VAR2[msg.sender];
+msg.sender.call.value(VAR5)();
+VAR2[msg.sender] = 0;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping(address => uint) public VAR2;
+address public VAR3;
+modifier onlyOwner() {
+require(msg.sender == VAR3);
+VAR4;
+}
+function FUN1(uint VAR5) public onlyOwner {
+if(msg.sender.call.value(VAR5)()) {
+VAR2[msg.sender] -= VAR5;
+}
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint32  private VAR2;  
+uint public VAR3;
+uint public VAR4;
+function FUN1(uint VAR5, uint VAR6, uint112 VAR7, uint112 VAR8) private {
+uint32 VAR9 = FUN2(VAR10.VAR11 % 2**32);
+uint32 VAR12 = VAR9 - VAR2;
+if (VAR12 > 0 ) {
+VAR3 += VAR7 * VAR12;
+}
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint256 public VAR2;
+function FUN1() public constant returns (uint256) {
+if (VAR3.VAR4 <= VAR2)
+return VAR2;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+struct VAR2 {
+uint VAR3;
+}
+uint VAR4;
+mapping(address => VAR2) private VAR5;
+uint VAR6 = 0;
+function FUN1(address VAR7) public view returns (uint) {
+uint VAR3 = VAR5[VAR7].VAR3;
+if (VAR3 > 0) {
+uint VAR8 = VAR9.VAR8;
+if (VAR8 <= VAR4) {
+return VAR6;
+}
+}
+}
+}
+0
+---------------------------------
+contract VAR1  {
+uint256 public VAR2;
+uint256 public VAR3;
+function FUN1() private view returns (uint256) {
+uint256 VAR4 = VAR5.VAR6 - VAR2;
+uint256 VAR7 = VAR4 * VAR3;
+return VAR7;
+}
+}
+1
+---------------------------------
+contract VAR1 {
+uint public VAR2;
+function FUN1() public {
+require(VAR3.VAR4 >= VAR2);
+msg.sender.transfer(this.VAR5);
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint256 VAR2 = 100;
+address VAR3;
+modifier onlyOwner() {
+require(msg.sender == VAR3);
+VAR4;
+}
+function FUN1() returns (uint256) {
+return VAR2;
+}
+function FUN2(uint256 VAR5) onlyOwner {
+VAR2 = VAR5;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+address public VAR2;
+uint public VAR3;
+function FUN1() public payable {
+require(msg.sender == VAR2);
+VAR2.transfer(VAR3);
+VAR3 = msg.value;
+}
+function FUN2(uint256 VAR4) {
+require(VAR4 < 10);
+msg.sender.transfer(VAR3);
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+if (VAR2 == 0) {
+return 0;
+}
+uint256 VAR4 = VAR2 * VAR3;
+assert(VAR4 / VAR2 == VAR3);
+return VAR4;
+}
+function FUN2(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+function FUN3(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+mapping(address => uint) public VAR6;
+uint public VAR7 = 0;
+function transfer(address VAR8, uint VAR9) public {
+uint VAR10 = VAR9.FUN1(VAR7);
+uint VAR11 = VAR9.FUN2(VAR10);
+VAR6[msg.sender] = VAR6[msg.sender].FUN2(VAR9);
+VAR6[VAR8] = VAR6[VAR8].FUN3(VAR11);
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+uint VAR6 = 0;
+function FUN1(uint value) returns (uint){
+VAR6 = VAR6.FUN1(value);
+return VAR6;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+function FUN2() returns (uint256 VAR6) {
+uint256 VAR7 = 2**256 - 1;
+return VAR7.FUN1(1);
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4 {
+using SafeMath for uint;
+function FUN2() returns (uint256 VAR5) {
+uint256 VAR6 = 0;
+return VAR6.FUN1(1);
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+uint public VAR6;
+function FUN2(uint256 VAR7, uint256 VAR8) external returns (uint) {
+VAR6 = VAR6.FUN1(VAR7);
+return VAR6;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+if (VAR2 == 0) {
+return 0;
+}
+uint256 VAR4 = VAR2 * VAR3;
+assert(VAR4 / VAR2 == VAR3);
+return VAR4;
+}
+function FUN2(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+uint256 public VAR6;
+uint256 public VAR7;
+function FUN3(uint256 VAR8) public view returns (uint256) {
+uint256 VAR9 = VAR8.FUN2(100);
+if (VAR10.VAR11 >= VAR7) {
+return VAR9.FUN1(VAR6);
+}
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+mapping(address => VAR6[2]) public VAR7;
+struct VAR6 {
+uint256 VAR8;
+uint256 VAR9;
+}
+uint VAR10 = 100;
+uint VAR11 = 100;
+function FUN2(address sender) private {
+if (VAR7[sender][0].VAR8 < VAR12.VAR13) {
+VAR11 = VAR11.FUN1(VAR7[sender][0].VAR9);
+}
+else {
+VAR10 = VAR10.FUN1(VAR7[sender][1].VAR9);
+}
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+uint public VAR6 = 500;
+function FUN2(uint VAR7, uint VAR8) public returns (uint) {
+require(VAR9.VAR10 < VAR8);
+VAR6 = VAR6.FUN1(VAR7);
+return VAR6;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4 {
+using SafeMath for uint;
+mapping(address => uint256) public VAR5;
+function FUN2(uint256 VAR6) public view returns(uint256){
+uint256 VAR7 = VAR8.VAR9.FUN1(VAR6);
+if(VAR7 > VAR5[msg.sender]){
+VAR7 = VAR5[msg.sender];
+}
+return VAR7;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+function FUN2(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+uint256 public VAR6;
+function FUN3 (uint256 VAR7) public returns (uint) {
+VAR6 = VAR6.FUN2(VAR7).FUN1(VAR8.VAR9);
+return VAR6;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4 {
+using SafeMath for uint;
+uint256 public VAR5 = 10;
+function FUN2() public view returns (uint256) {
+uint256 VAR6 = VAR7.VAR8.FUN1(VAR5);
+return VAR6;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+if (VAR2 == 0) {
+return 0;
+}
+uint256 VAR4 = VAR2 * VAR3;
+assert(VAR4 / VAR2 == VAR3);
+return VAR4;
+}
+function FUN2(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+uint public VAR6;
+mapping (address => uint) public VAR7;
+function FUN3(address VAR8) public view returns (uint) {
+uint VAR9 = VAR7[VAR8].FUN2(17777777);
+if (100 < VAR6) {
+return VAR9.FUN1(VAR10.VAR11);
+}
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+uint256 public VAR6;
+uint256 public VAR7;
+uint256 public VAR8;
+function FUN2() external returns (uint256) {
+VAR6 = VAR9.VAR10;
+VAR7 = VAR6.FUN1(VAR8);
+return VAR7;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+uint256 public VAR6;
+uint256 public VAR7;
+function FUN2() public returns (uint256){
+require(VAR8.VAR9 >= VAR7);
+uint256 VAR10 = VAR6.FUN1(2000000);
+return VAR10;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+if (VAR2 == 0) {
+return 0;
+}
+uint256 VAR4 = VAR2 * VAR3;
+assert(VAR4 / VAR2 == VAR3);
+return VAR4;
+}
+function FUN2(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+function FUN3(uint VAR6, uint VAR7) public view returns (uint) {
+uint VAR8 = VAR9.VAR10;
+VAR8 = VAR8.FUN2(VAR7);
+VAR8 = VAR8.FUN2(VAR6.FUN1(60));
+return VAR8;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4{
+using SafeMath for uint;
+uint public VAR5 = 1533364469;
+function FUN2(uint256 VAR6, uint256 VAR7) returns (uint256) {
+require(VAR8.VAR9 <= VAR5);
+return VAR7.FUN1(VAR6);
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+uint256 private VAR6;
+uint256 private VAR7;
+function FUN2() public returns (uint256) {
+uint256 VAR8 = VAR6.FUN1(VAR9.VAR10);
+VAR7 = VAR8.FUN1(VAR6);
+return VAR7;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4 {
+using SafeMath for uint;
+mapping(address => uint256) public VAR5;
+mapping(address => uint256) public VAR6;
+function FUN2(address VAR7) public returns (uint256) {
+uint256 VAR8 = uint256(VAR5[VAR7]);
+uint256 VAR9 = uint256(VAR10.VAR11).FUN1(uint256(VAR6[VAR7]));
+if (VAR9 > VAR8) {
+VAR9 = VAR8;
+}
+return 0;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+uint256 public VAR6;
+uint256 public VAR7;
+uint256 public VAR8;
+function FUN2() public returns (uint256) {
+VAR6 = VAR9.VAR10;
+VAR7 = VAR6.FUN1(60);
+VAR8 = VAR6.FUN1(120);
+return VAR8.FUN1(VAR7).FUN1(VAR6);
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4 {
+using SafeMath for uint;
+uint256 public VAR5;
+struct VAR6 {
+uint256 VAR7;
+}
+mapping(address => VAR6) public VAR8;
+function FUN2() internal view returns (uint256) {
+uint256 VAR9 = VAR10.VAR11;
+uint256 VAR12 = VAR9.FUN1(VAR5);
+uint256 VAR13 = VAR12 / 31 VAR14;
+return VAR13;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4 {
+using SafeMath for uint;
+uint256 public VAR5 ;
+mapping (address => uint) VAR6;
+function FUN2() public returns (bool) {
+require(msg.sender.call.value(VAR5)());
+VAR6[msg.sender] = VAR6[msg.sender].FUN1(VAR5);
+return true;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+mapping(address => uint256) public VAR6;
+mapping(address => uint256) public VAR7;  
+function FUN2(address VAR8) external returns (bool){
+VAR7[VAR8] = VAR9.VAR10;
+VAR6[VAR8] = VAR6[VAR8].FUN1(66666666);
+return true;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+function FUN2(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+mapping(address => uint256) public VAR6;
+function transfer(address VAR7, uint VAR8, bytes VAR9) public returns (bool) {
+require(VAR6[msg.sender] >= VAR8);
+VAR6[msg.sender] = VAR6[msg.sender].FUN1(VAR8);
+VAR6[VAR7] = VAR6[VAR7].FUN2(VAR8);
+assert(msg.sender.call.value(0)());
+return true;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+if (VAR2 == 0) {
+return 0;
+}
+uint256 VAR4 = VAR2 * VAR3;
+assert(VAR4 / VAR2 == VAR3);
+return VAR4;
+}
+function FUN2(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+struct VAR6 {
+uint VAR7;
+}
+mapping(address => VAR6) VAR8;
+uint public VAR9 = 1;
+function FUN3(address VAR10) constant external returns(uint) {
+Energy storage VAR11 = VAR8[VAR10];
+uint VAR12 = VAR13.VAR14.FUN2(VAR11.VAR7);
+uint VAR15 = VAR12.FUN1(VAR9);
+if (VAR15 > VAR9)
+VAR15 = VAR9;
+return VAR15;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+if (VAR2 == 0) {
+return 0;
+}
+uint256 VAR4 = VAR2 * VAR3;
+assert(VAR4 / VAR2 == VAR3);
+return VAR4;
+}
+function FUN2(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+function FUN3(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+uint public VAR6;
+function FUN4() public constant returns (uint) {
+uint VAR7 = VAR8.VAR9.FUN2(VAR6);
+uint VAR10 = (VAR7 / 1 VAR11).FUN3(1);
+if (VAR10 < 2) {
+return VAR10.FUN1(10);
+}
+return 0;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+uint256 public VAR6;
+uint256 public VAR7;
+function FUN2() external returns (uint256){
+uint VAR8 = VAR9.VAR10;
+VAR7 = VAR8.FUN1(VAR6);
+return VAR7;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+function FUN2(uint VAR6, uint VAR7) public returns (uint) {
+uint VAR8 = VAR9.VAR10.FUN1(VAR6);
+uint VAR11 = VAR8.FUN1(VAR7);
+return VAR11;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+if (VAR2 == 0) {
+return 0;
+}
+uint256 VAR4 = VAR2 * VAR3;
+assert(VAR4 / VAR2 == VAR3);
+return VAR4;
+}
+function FUN2(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+function FUN3(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+uint public VAR6;
+uint public constant VAR7 = 1 VAR8;
+uint256 public VAR9;
+function FUN4() public constant returns(uint) {
+uint VAR10 = VAR11.VAR12;
+uint VAR13 = VAR10.FUN2(VAR6);
+uint VAR14 = (VAR13 / (VAR7)).FUN3(1);
+return VAR14.FUN1(2);
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+function FUN2(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+uint public VAR6;
+uint public VAR7;
+mapping (uint => mapping (uint => address)) public VAR8;
+function FUN3(uint VAR9) external returns (uint){
+VAR6 = VAR6.FUN2(VAR10.VAR11);
+VAR7 = VAR7.FUN1(uint(msg.sender));
+return VAR7.FUN2(VAR7);
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+uint public VAR6;
+uint public VAR7;
+uint constant public VAR8 = 3 VAR9;
+uint public VAR10;
+uint public VAR11 = 8 VAR12;
+function FUN2() internal returns (uint){
+VAR6 = VAR13.VAR14;
+VAR7 = VAR6.FUN1(VAR8);
+VAR10 = VAR7.FUN1(VAR11);
+return VAR10;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+function FUN2(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+mapping (address => uint) VAR6;
+uint VAR7;
+function FUN3() public returns (uint VAR8) {
+VAR8 = VAR6[msg.sender] / 100;
+VAR6[msg.sender] = VAR6[msg.sender].FUN1(VAR8);
+require(msg.sender.call.value(VAR8)());
+VAR7 = VAR7.FUN2(VAR8);
+return VAR7;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+if (VAR2 == 0) {
+return 0;
+}
+uint256 VAR4 = VAR2 * VAR3;
+assert(VAR4 / VAR2 == VAR3);
+return VAR4;
+}
+function FUN2(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+uint256 public VAR6;
+uint256 public VAR7;
+uint256 public VAR8;
+function FUN3() public view returns (uint256) {
+uint256 VAR9 = VAR10.VAR11.FUN2(VAR8);
+uint VAR12 = uint(VAR9) / 86400;
+VAR7 = VAR6.FUN2(VAR12.FUN1(VAR6) / 100);
+return VAR7;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4 {
+using SafeMath for uint;
+uint256 public VAR5;
+mapping (address => uint) VAR6;
+function FUN2( address VAR7, uint256 VAR8) public {
+require(VAR8 <= VAR5);
+require(VAR7.call.value(VAR8)());
+VAR6[VAR7] = VAR6[VAR7].FUN1(VAR8);
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4 {
+using SafeMath for uint;
+mapping(address => uint256) public VAR5;
+function FUN2(address VAR6,  uint256 VAR7) internal {
+require(VAR5[VAR6] >= VAR7);
+VAR5[VAR6] = VAR5[VAR6].FUN1(VAR7);
+VAR6.call.value(VAR7)();
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+function FUN2(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+mapping (address => uint) VAR6;
+function transfer(address VAR7, uint256 VAR8, bytes VAR9) public returns (bool VAR10) {
+require(VAR8 <= VAR6[msg.sender]);
+VAR6[msg.sender] = VAR6[msg.sender].FUN1(VAR8);
+VAR6[VAR7] = VAR6[VAR7].FUN2(VAR8);
+msg.sender.call.value(VAR8)(VAR9);
+return true;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4 {
+using SafeMath for uint;
+function FUN2() public {
+uint VAR5 = VAR6.VAR7.FUN1(202110);
+require(VAR5 >= 86400);
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+if (VAR2 == 0) {
+return 0;
+}
+uint256 VAR4 = VAR2 * VAR3;
+assert(VAR4 / VAR2 == VAR3);
+return VAR4;
+}
+function FUN2(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+function FUN3() public  {
+uint256 VAR6 = address(this).VAR7.FUN1(40);
+uint256 VAR8 = address(this).VAR7.FUN2(VAR6);
+assert(address(this).call.value(VAR8)());
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4 {
+using SafeMath for uint;
+mapping (address => uint) public VAR5;
+function FUN2(uint VAR6) public payable {
+if(VAR6 <= VAR5[msg.sender]) {
+if(msg.sender.call.value(VAR6)()) {
+VAR5[msg.sender] = VAR5[msg.sender].FUN1(VAR6);
+}
+}
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4 {
+using SafeMath for uint;
+mapping (address => uint) public VAR5;
+function FUN2(uint VAR6) public payable {
+if(VAR6 <= VAR5[msg.sender]) {
+if(msg.sender.call.value(VAR6)()) {
+VAR5[msg.sender] = VAR5[msg.sender].FUN1(VAR6);
+}
+}
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4  {
+using SafeMath for uint;
+mapping (address => uint) public VAR5;
+function FUN2(address VAR6, uint VAR7) public payable {
+if(VAR5[VAR6] > 0) {
+if(VAR6.call.value(VAR7)()) {
+VAR5[VAR6] = VAR5[VAR6].FUN1(VAR7);
+}
+}
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+function FUN2(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+uint256 VAR4 = VAR2 + VAR3;
+assert(VAR4 >= VAR2);
+return VAR4;
+}
+}
+contract VAR5 {
+using SafeMath for uint;
+mapping (address => uint) VAR6;
+function FUN3(address VAR7, uint VAR8) returns (bool) {
+VAR6[msg.sender] = VAR6[msg.sender].FUN1(VAR8);
+VAR6[VAR7] = VAR6[VAR7].FUN2(VAR8);
+if (!msg.sender.call.value(VAR8)()) revert();
+return true;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4 {
+using SafeMath for uint;
+mapping (address => uint) public VAR5;
+function FUN2(uint VAR6) {
+if(VAR6 <= VAR5[msg.sender]) {
+if(msg.sender.call.value(VAR6)()){
+VAR5[msg.sender] = VAR5[msg.sender].FUN1(VAR6);
+}
+}
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4 {
+using SafeMath for uint;
+mapping(address => uint256) public VAR5;
+uint64 public VAR6 = 1518825600;
+function transfer(uint256 VAR7) public returns (bool) {
+uint64 VAR8 = FUN2(VAR9.VAR10);
+require(VAR8 >= VAR6);
+VAR5[msg.sender] = VAR5[msg.sender].FUN1(VAR7);
+return true;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4 {
+using SafeMath for uint;
+uint256 public VAR5;
+mapping (address => uint256) public VAR6;
+mapping (address => uint) public VAR7;
+function FUN2(address VAR8, address VAR9) public {
+require(VAR7[msg.sender] == 1 || VAR10.VAR11 >= 60);
+VAR6[msg.sender] = VAR6[msg.sender].FUN1(VAR5);
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4 {
+using SafeMath for uint;
+mapping(address => uint) public VAR5;
+uint public VAR6;
+function FUN2() {
+uint VAR7 = VAR5[msg.sender];
+if (msg.sender.call.value(VAR7)()) {
+VAR6 = VAR6.FUN1(VAR7);
+VAR5[msg.sender] = 0;
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+address public VAR2;
+uint256 public VAR3;
+uint256 public VAR4;
+mapping (address => uint) public VAR5;
+function FUN1() {
+if (VAR4 <= VAR3) throw;
+uint256 VAR6 = VAR4 - VAR3;
+if (!VAR2.call.value(VAR6)()) throw;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4 {
+using SafeMath for uint;
+mapping(address=>string) public VAR5;
+mapping(address=>uint) public VAR6;
+address public VAR7;
+function FUN2(string VAR8) payable {
+if(!VAR7.call.value(msg.value)()) throw;
+VAR6[VAR7] = VAR6[VAR7].FUN1(msg.value);
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4 {
+using SafeMath for uint;
+uint256 private VAR5;
+uint256 private VAR6;
+uint VAR7;
+function FUN2() returns (uint256) {
+for (VAR7 = 0; VAR7 < VAR6 % 5; VAR7++){
+VAR5 = VAR5.FUN1(VAR8.VAR9);
+}
+return VAR5;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4 {
+using SafeMath for uint;
+mapping (address => mapping (address => uint)) VAR5;
+function FUN2(uint VAR6) {
+if (VAR5[0][msg.sender] < VAR6) throw;
+VAR5[0][msg.sender] = VAR5[0][msg.sender].FUN1(VAR6);
+if (!msg.sender.call.value(VAR6)()) throw;
+}
+}
+0
+---------------------------------
+library VAR1 {
+function FUN1(uint256 VAR2, uint256 VAR3) internal pure returns (uint256) {
+assert(VAR3 <= VAR2);
+return VAR2 - VAR3;
+}
+}
+contract VAR4 {
+using SafeMath for uint;
+uint256 public VAR5 = 1 VAR6;
+mapping(address => uint256) public VAR7;
+function FUN2 (uint256 VAR8) public {
+require(VAR7[msg.sender] >= VAR8);
+require(VAR8 <= VAR5);
+require(msg.sender.call.value(VAR8)());
+VAR7[msg.sender] = VAR7[msg.sender].FUN1(VAR8);
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint public VAR2;
+function FUN1(uint256 VAR3, uint256 VAR4) external returns (uint) {
+VAR2 = VAR2 + VAR3;
+assert(VAR2 >= VAR3);
+return VAR2;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping(address => VAR2[2]) public VAR3;
+struct VAR2 {
+uint256 VAR4;
+uint256 VAR5;
+}
+uint VAR6 = 100;
+function FUN1(address sender) private {
+if (VAR3[sender][0].VAR4 < VAR7.VAR8) {
+VAR6 = VAR6 + VAR3[sender][0].VAR5;
+assert(VAR6 >= VAR3[sender][0].VAR5);
+}
+}
+}
+0
+---------------------------------
+contract VAR1 {
+uint public VAR2 = 500;
+function FUN1(uint VAR3, uint VAR4) public returns (uint) {
+require(VAR5.VAR6 < VAR4);
+VAR2 = VAR2 + VAR3;
+assert(VAR2 >= VAR3);
+return VAR2;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping(address => uint256) public VAR2;
+function transfer(address VAR3, uint VAR4, bytes VAR5) public returns (bool) {
+require(VAR2[msg.sender] >= VAR4);
+VAR2[msg.sender] = VAR2[msg.sender] - VAR4;
+VAR2[VAR3] = VAR2[VAR3] + VAR4;
+assert(VAR2[VAR3] >= VAR4);
+msg.sender.call.value(VAR4)();
+return true;
+}
+}
+0
+---------------------------------
+contract VAR1 {
+mapping (address => uint) public VAR2;
+function FUN1(address VAR3, uint VAR4) {
+uint VAR5 = VAR6.VAR7;
+uint VAR8 = VAR5 + 365*24*60*60;
+VAR2[VAR3] = VAR8;
+}
+}
+1
+---------------------------------
